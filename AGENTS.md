@@ -58,3 +58,7 @@ Site/app HTML bakes and the production merge should use the native Windows pipel
 ## Resource → URL list
 
 **Resource → URL list:** When you add a file under `site/project/root/Resource/` that must appear in production (covers, logos, static images), also add a matching row to the site’s bake URL list (`config/Url.tsv` / `URL.tsv`, and `Url_<lang>.tsv` when language-specific). Empty Path + Name + Extension → public `/{name}.{ext}` (usual for covers like `faq.svg`). Path `resource/` → public `/resource/{name}.{ext}`. Live PHP may work from Resource alone; baked Firebase/`web-public` only gets assets Tiggu fetches from that list. Do not hand-edit `interim/`/`public/`/`web-public` for new assets—update Resource + Url list, then bake and publish.
+
+## Image proportion / credits
+Site config/Image_display.tsv overrides tile/hero fit. FAQ uses hero+cover. Base.php must call `renderComponentBody()`. See web-site AGENTS.
+
