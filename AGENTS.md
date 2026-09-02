@@ -54,3 +54,7 @@ Site/app HTML bakes and the production merge should use the native Windows pipel
 2. **Bake one project:** `. .\project\PublishRunner.ps1; Invoke-WoloNativeTiggu -Kind site` (or `-Kind app`). Origin/Host: site → `http://127.0.0.1:8084` + `wolo.local`; app → `:8085` + `wolo.local`.
 3. **Full merge:** `.\project\render-native.ps1` (same order as `render.sh`: tiggu app, tiggu site, copy site then app into `project/build` so app overwrites). Does not replace `firebase.json`.
 4. Apache + Host `wolo.local` on :8084/:8085 must respond before bake (runner probes). Docker `compose-dev` remains an optional fallback only.
+
+## Resource → URL list
+
+**Resource → URL list:** When you add a file under `site/project/root/Resource/` that must appear in production (covers, logos, static images), also add a matching row to the site’s bake URL list (`config/Url.tsv` / `URL.tsv`, and `Url_<lang>.tsv` when language-specific). Empty Path + Name + Extension → public `/{name}.{ext}` (usual for covers like `faq.svg`). Path `resource/` → public `/resource/{name}.{ext}`. Live PHP may work from Resource alone; baked Firebase/`web-public` only gets assets Tiggu fetches from that list. Do not hand-edit `interim/`/`public/`/`web-public` for new assets—update Resource + Url list, then bake and publish.
