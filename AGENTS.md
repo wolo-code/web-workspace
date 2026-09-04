@@ -62,3 +62,6 @@ Site/app HTML bakes and the production merge should use the native Windows pipel
 ## Image proportion / credits
 Site config/Image_display.tsv overrides tile/hero fit. FAQ uses hero+cover. Base.php must call `renderComponentBody()`. See web-site AGENTS.
 
+
+## Encoder publish caveat
+When publishing the app/encoder bake into `web-public`, copy the full app `public/` outputs needed by `index.html` — especially hashed `root-*.min.js` (+ `.map`) — not only `index.html`. Firebase `**` rewrite falls back to `index.html` for missing paths, which surfaces as `Unexpected token '<'` in the browser.
