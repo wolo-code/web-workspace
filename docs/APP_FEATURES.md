@@ -7,6 +7,7 @@
 - Default map opens globally, then moves to a detected or selected city/location.
 - Supports terrain/map and satellite modes.
 - Includes floating controls for account, location, action menu, map/code mode, map type, notifications, and footer links.
+- Location Wolo Label View (map InfoWindow) uses a dark card and high-contrast Wolo Code text in dark mode.
 - Supports URL/query-driven startup:
   - Path-based Wolo Code decode links.
   - `_` suffix for satellite map startup.
