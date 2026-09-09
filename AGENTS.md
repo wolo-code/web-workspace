@@ -34,23 +34,23 @@ In production, **app + site are merged into one Firebase Hosting deploy** (`proj
 
 `public/` and `interim/` (in every project) are Tiggu build output. Edit the source (`root/`, `config/`, `HTML/`, etc.) and rebuild; the note above about `public/` and `interim/` applies repo-wide.
 
-## Local Windows hosting (E:\Web)
+## Local Windows hosting (D:\Wolo\Web)
 
 Local preview is Apache + Caddy at **https://wolo.local/**, not Docker `compose-dev`.
 
-- `/` is the encoder app (`E:\Web\app\project\root`, Apache :8085).
-- `/about` (and faq, features, downloads, …) is the Cutie site (`E:\Web\site\project\root`, Apache :8084).
-- Shared stack, vhosts, Caddy, hosts, and prove commands: see `E:\AGENTS.md`.
+- `/` is the encoder app (`D:\Wolo\Web\app\project\root`, Apache :8085).
+- `/about` (and faq, features, downloads, …) is the Cutie site (`D:\Wolo\Web\site\project\root`, Apache :8084).
+- Shared stack, vhosts, Caddy, hosts, and prove commands: see this file and `DOCKER.md`.
 - Header: theme menu (light/dark/system). No header download button; Downloads stays in the footer and menu.
 - Site Framework is a submodule (`blank-org/cutie-framework`). Do not commit site-only CSS there.
-- Do not edit `public/` or `interim/` for source changes; they are Tiggu/generated. Production publish is `wolo-code/web-public` (`E:\Web\project\build`); Firebase Hosting deploys on push to `main`.
-- Site source repo: `E:\Web\site\project` → `wolo-code/web-site`.
+- Do not edit `public/` or `interim/` for source changes; they are Tiggu/generated. Production publish is `wolo-code/web-public` (`D:\Wolo\Web\project\build`); Firebase Hosting deploys on push to `main`.
+- Site source repo: `D:\Wolo\Web\site\project` → `wolo-code/web-site`.
 
 ## Native Tiggu publish (Dockerless — preferred)
 
 Site/app HTML bakes and the production merge should use the native Windows pipeline — **not** Docker by default.
 
-1. **Once:** run `project\Install-NativePublishTools.ps1` (downloads pinned minify + Closure Compiler into `E:\Web\.native-tools`). Needs Java (Android Studio JBR) and `python` on PATH.
+1. **Once:** run `project\Install-NativePublishTools.ps1` (downloads pinned minify + Closure Compiler into `D:\Wolo\Web\.native-tools`). Needs Java (Android Studio JBR) and `python` on PATH.
 2. **Bake one project:** `. .\project\PublishRunner.ps1; Invoke-WoloNativeTiggu -Kind site` (or `-Kind app`). Origin/Host: site → `http://127.0.0.1:8084` + `wolo.local`; app → `:8085` + `wolo.local`.
 3. **Full merge:** `.\project\render-native.ps1` (same order as `render.sh`: tiggu app, tiggu site, copy site then app into `project/build` so app overwrites). Does not replace `firebase.json`.
 4. Apache + Host `wolo.local` on :8084/:8085 must respond before bake (runner probes). Docker `compose-dev` remains an optional fallback only.
