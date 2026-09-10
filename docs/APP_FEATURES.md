@@ -8,6 +8,7 @@
 - Supports terrain/map and satellite modes.
 - Includes floating controls for account, location, action menu, map/code mode, map type, notifications, and footer links.
 - Location Wolo Label View (map InfoWindow) uses a dark card and high-contrast Wolo Code text in dark mode.
+- Address Panel follows light/dark theme, shows plus code in India as well as DIGIPIN with labels on the left and code values on the right, copies DIGIPIN in uppercase, copies drag-selected text without replacing the highlight, stays open after navigating with a DIGIPIN or plus code, and hides when Locate starts. Bottom toasts and the accuracy strip stack above the Address Panel in a shared flex dock so they do not overlap when the panel grows.
 - Supports URL/query-driven startup:
   - Path-based Wolo Code decode links.
   - `_` suffix for satellite map startup.
