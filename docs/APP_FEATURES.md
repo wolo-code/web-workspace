@@ -115,7 +115,7 @@
 - Shows cookie/privacy notice.
 - Shows unsupported browser warning.
 - Shows unexpected error dialog with optional technical log.
-- Reports exceptions to Sentry.
+- Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
 - Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics.
 
 ### 12. Backend and Third-Party Services
@@ -129,7 +129,7 @@
 | Firebase Auth / FirebaseUI | Login and account management |
 | Firebase Analytics | Usage events |
 | Firebase Performance | Performance telemetry |
-| Sentry | Error reporting |
+| Sentry | Error reporting (CDN SRI verified before/after deploy) |
 | Cloudflare | Hosting/analytics |
 | GeoFire | Encoded city center/location storage |
 | html2canvas / jsPDF | Printable/downloadable code artifacts |

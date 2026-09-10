@@ -52,7 +52,7 @@ Site/app HTML bakes and the production merge should use the native Windows pipel
 
 1. **Once:** run `project\Install-NativePublishTools.ps1` (downloads pinned minify + Closure Compiler into `D:\Wolo\Web\.native-tools`). Needs Java (Android Studio JBR) and `python` on PATH.
 2. **Bake one project:** `. .\project\PublishRunner.ps1; Invoke-WoloNativeTiggu -Kind site` (or `-Kind app`). Origin/Host: site → `http://127.0.0.1:8084` + `wolo.local`; app → `:8085` + `wolo.local`.
-3. **Full merge:** `.\project\render-native.ps1` (same order as `render.sh`: tiggu app, tiggu site, copy site then app into `project/build` so app overwrites). Does not replace `firebase.json`.
+3. **Full merge:** `.\project\render-native.ps1` (same order as `render.sh`: tiggu app, tiggu site, copy site then app into `project/build` so app overwrites). Does not replace `firebase.json`. Native bake and Firebase Hosting CI run `project/build/scripts/verify-sri.mjs` so stale `integrity` hashes (Sentry CDN) fail before deploy.
 4. Apache + Host `wolo.local` on :8084/:8085 must respond before bake (runner probes). Docker `compose-dev` remains an optional fallback only.
 
 ## Resource → URL list
