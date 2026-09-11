@@ -3,10 +3,13 @@
 
 ### 1. Primary Map Experience
 
-- Full-screen Google Maps UI.
+- Full-screen Google Maps UI, with optional OpenStreetMap, Apple Maps, Esri, and Microsoft Maps tiles.
 - Default map opens globally, then moves to a detected or selected city/location.
-- Supports terrain/map and satellite modes.
-- Includes floating controls for account, location, action menu, map/code mode, map type, notifications, and footer links.
+- Supports terrain/map, satellite, OSM, Apple Maps, Esri, and Microsoft Maps modes.
+- Profile menus (account and login) let you enable or disable Google Maps, OSM, Apple Maps, Esri, and Microsoft Maps, and set one enabled source as default. Appearance theme buttons show System/Light/Dark labels on hover.
+- Includes floating controls for account, location, action menu, map/code mode, map type, notifications, and footer links. Those icon controls show native hover tooltips.
+- Google’s logo and map-data credit stay on Google terrain/satellite only; OSM, Apple Maps, Esri, and Microsoft views hide that branding. Non-Google source attribution sits bottom-left after a small gap from the Action Menu.
+- Apple Maps follows the Google overlay during drag with a CSS transform and only recommits MapKit’s camera on idle, zoom, or a large pan.
 - Location Wolo Label View (map InfoWindow) uses a dark card and high-contrast Wolo Code text in dark mode.
 - Address Panel follows light/dark theme, shows plus code in India as well as DIGIPIN with labels on the left and code values on the right, copies DIGIPIN in uppercase, copies drag-selected text without replacing the highlight, stays open after navigating with a DIGIPIN or plus code, and hides when Locate starts. Bottom toasts and the accuracy strip stack above the Address Panel in a shared flex dock so they do not overlap when the panel grows.
 - Supports URL/query-driven startup:
@@ -33,6 +36,7 @@
 - Last three tokens are treated as the code words.
 - Preceding tokens are treated as the city.
 - Web app resolves ambiguous city names through a "Choose the city" dialog.
+- Unrecognized input opens a dialog that centers the typed value and offers matching primary-accent Edit code and Search map buttons (reverse-play and play icons) at the left and right edges.
 - Decoded location is shown on the map and can be used for downstream map/navigation actions.
 
 ### 4. City Context and City Selection
@@ -73,7 +77,7 @@
 
 - Supports Firebase Authentication via FirebaseUI.
 - Shows login/sign-up dialog.
-- Shows account dialog with display name and email.
+- Shows account dialog with display name, email, appearance, and map source prefs.
 - Allows logout.
 - Provides "Current" save UI with:
   - Title
@@ -107,7 +111,7 @@
   - About
   - Terms of use
   - Privacy policy
-  - Credits
+  - Credits (`/credits`: location codes, maps, browser, and icons)
   - Source code
   - App download page
   - Contact email
@@ -143,3 +147,9 @@ Core backend resources already used or planned by the iOS app:
 | cityByIp production | `https://wolo.codes/api/cityByIp` |
 | cityByIp development | `https://dev.wolo.codes/api/cityByIp` |
 | Google Geocoding | `https://maps.googleapis.com/maps/api/geocode/json` |
+
+### 13. Site chrome (Cutie)
+
+- Header theme menu (light / dark / system). Downloads live in the site menu, not the header. The footer has store badges and wolo.codes/get, not a download icon.
+- Opening the site menu from a long article slides the article out first (full height). After that slide, the frame settles so the footer sits at the bottom of the shorter menu page. The footer then fades and moves in from below. Height is flex-column, not a measured canvas/min-height.
+- Footer includes Play Store and App Store badges (App Store is coming soon).
