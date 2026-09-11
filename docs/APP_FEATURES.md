@@ -5,10 +5,10 @@
 
 - Full-screen Google Maps UI, with optional OpenStreetMap, Apple Maps, Esri, and Microsoft Maps tiles.
 - Default map opens globally, then moves to a detected or selected city/location.
-- Supports terrain/map, satellite, OSM, Apple Maps, Esri, and Microsoft Maps modes.
-- Profile menus (account and login) let you enable or disable Google Maps, OSM, Apple Maps, Esri, and Microsoft Maps, and set one enabled source as default. Appearance theme buttons show System/Light/Dark labels on hover.
-- Includes floating controls for account, location, action menu, map/code mode, map type, notifications, and footer links. Those icon controls show native hover tooltips.
-- Google’s logo and map-data credit stay on Google terrain/satellite only; OSM, Apple Maps, Esri, and Microsoft views hide that branding. Non-Google source attribution sits bottom-left after a small gap from the Action Menu.
+- Supports terrain/map, Google Satellite view, OSM, Apple Maps, Esri, and Microsoft Maps modes.
+- Profile menus (account and login) let you enable or disable Google Maps, OSM, Apple Maps, Esri, and Microsoft Maps, and set one enabled source as default. Only the active default star stays visible until you hover the map source list. Appearance theme icons stay large until hover or focus, then shrink so System/Light/Dark labels can appear. Dark-mode hover uses a gray highlight. Section headings use the muted dialog label color, not the primary accent.
+- Includes floating controls for account, location, info (Wolo Code Input View), Wolo Code input (map views), map-type switcher in the bottom-right corner (map views), notifications, and footer links. Those icon controls show native hover tooltips except the appearance theme buttons. The first two launches show on-screen captions naming the Wolo Code Input View icons; the centered caption cluster stays vertically middle and can shift up on very small screens so bottom notifications stay visible. The map camera dpad sits on the same vertical band as Locate, matching the 39px map-type disc with a small gap to its left. Locate from Wolo Code Input View switches to the default map view and starts geolocation. The Wolo Code Input View map button always uses the terrain SVG, regardless of which map source that control will open.
+- Google’s logo and map-data credit stay on Google terrain/satellite only; OSM, Apple Maps, Esri, and Microsoft views hide that branding. Non-Google OSM/Esri/Microsoft attribution sits bottom-left after a small gap from the bottom-left chrome, close to the bottom edge, and stays on one line on widescreen. Apple Maps shows MapKit’s logo without a blur overlay or an extra Apple text label.
 - Apple Maps follows the Google overlay during drag with a CSS transform and only recommits MapKit’s camera on idle, zoom, or a large pan.
 - Location Wolo Label View (map InfoWindow) uses a dark card and high-contrast Wolo Code text in dark mode.
 - Address Panel follows light/dark theme, shows plus code in India as well as DIGIPIN with labels on the left and code values on the right, copies DIGIPIN in uppercase, copies drag-selected text without replacing the highlight, stays open after navigating with a DIGIPIN or plus code, and hides when Locate starts. Bottom toasts and the accuracy strip stack above the Address Panel in a shared flex dock so they do not overlap when the panel grows.
@@ -28,6 +28,7 @@
 - Wolo algorithm encodes the selected coordinate into three 10-bit word indexes.
 - Word indexes are mapped to the 1,024-word Wolo word list.
 - App shows the generated Wolo Code with its city context.
+- Locations outside a city's encode coverage (about 32.8 km from the city center) show **Area not covered** instead of repeating the same invalid code.
 
 ### 3. Decode - Wolo Code to Map Location
 
@@ -36,7 +37,7 @@
 - Last three tokens are treated as the code words.
 - Preceding tokens are treated as the city.
 - Web app resolves ambiguous city names through a "Choose the city" dialog.
-- Unrecognized input opens a dialog that centers the typed value and offers matching primary-accent Edit code and Search map buttons (reverse-play and play icons) at the left and right edges.
+- Unrecognized input opens a padded dialog that centers the typed value and offers matching primary-accent Edit code and Search map buttons (reverse-play and play icons). Search map opens Map View and the Address Panel.
 - Decoded location is shown on the map and can be used for downstream map/navigation actions.
 
 ### 4. City Context and City Selection
@@ -47,6 +48,7 @@
 - Provides "Choose the city" flow when multiple cities match.
 - Shows nearby cities when selecting city context.
 - Shows a current city label in city selection UI.
+- Previous-city list stores cities from decode/encode and geolocation selection. Long-press a city to remove it from that list.
 - Falls back to manual map selection when location access is denied.
 
 ### 5. Location Permission and Accuracy Flow
