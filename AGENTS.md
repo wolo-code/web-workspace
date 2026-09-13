@@ -18,6 +18,7 @@ This is the `wolo.codes` monorepo — an aggregator of several independently-ver
 | `site/project/` | wolo-code/web-site | The marketing/content website, built on the **Cutie** framework (`site/project/root/Framework`, a submodule). Owns content pages (`/about`, `/features`, …). |
 | `tiggu/` | blank-org/tiggu | Build/render toolchain (`Render → Build → Publish → API`); outputs `interim/` + `public/`. |
 | `firebase/` | blank-org/firebase | Dockerized Firebase CLI for deploy / CI setup. |
+| `console/` | wolo-code/console | Local OliveTin GUI to bake the merged site and deploy to `dev.wolo.codes` or `wolo.codes`. |
 
 ## Merged site & the empty root
 
@@ -44,6 +45,7 @@ Local preview is Apache + Caddy at **https://wolo.local/**, not Docker `compose-
 - Site Framework is a submodule (`blank-org/cutie-framework`). Do not commit site-only CSS there.
 - Do not edit `public/` or `interim/` for source changes; they are Tiggu/generated. Production publish is `wolo-code/web-public` (`D:\Wolo\Web\project\build`); Firebase Hosting deploys on push to `main`.
 - Site source repo: `D:\Wolo\Web\site\project` → `wolo-code/web-site`.
+- Operator console: `https://console.wolo.local/` (OliveTin on `127.0.0.1:47822`). Start with `D:\Wolo\Web\console\Start-Console.ps1`. **Deploy to development** uses the Firebase CLI against project `waddress-5f30b` (`https://dev.wolo.codes`). **Deploy to production** pushes `web-public` `main` (`https://wolo.codes`). Hosts: `127.0.0.1 console.wolo.local`. Reload Caddy after `C:\programs\Caddy\caddyfile` changes.
 
 ## Native Tiggu publish (Dockerless — preferred)
 
