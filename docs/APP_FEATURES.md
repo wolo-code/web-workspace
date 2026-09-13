@@ -59,7 +59,7 @@
 - Uses browser geolocation watch for high-accuracy location.
 - Shows accuracy in meters.
 - Shows an accuracy indicator whose color changes with accuracy. The strip is a fixed-height pill: the FF proceed control sits flush on the same layer, is vertically centered, and the width and item positions stay put across meter values and after proceed hides the control.
-- Provides a "Proceed" control so users can accept the current fix before the watch completes.
+- Provides a "Proceed" control so users can accept the current fix before the watch completes. Five consecutive `99+` accuracy samples auto-proceed the same way, unless locate is in long-press override (the locate icon stays blinking and auto-proceed is skipped).
 - Handles permission denied, unsupported browser geolocation, invalid `0,0` positions, timeout, and low-accuracy states.
 
 ### 6. Unsupported City Request
