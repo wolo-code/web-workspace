@@ -1,0 +1,13 @@
+---
+description: Commit completed work immediately in each affected repo
+alwaysApply: true
+---
+
+# Commit when work is complete
+
+When a coherent piece of work is finished, create the git commit(s) yourself. Do not stop at a suggested message, and do not wait for the user to ask.
+
+- Commit in each nested repo that changed (`app/project`, `site/project`, Framework submodule, aggregator root). Leave unrelated repos untouched.
+- One concern per commit. Split crash-dialog, account-book, map, and docs changes instead of bundling them.
+- Subject line states why; body adds detail. No `--amend` unless the usual amend safety checks pass. Never push unless asked.
+- Do not commit `public/`, `interim/`, `.playwright-cli/`, or secret files.
