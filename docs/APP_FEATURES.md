@@ -118,7 +118,7 @@
   - Social pages
 - Shows cookie/privacy notice.
 - Shows unsupported browser warning.
-- Shows a blocking unexpected error dialog titled `Error occured!` with a warning icon, Clear cache & reload, and a support email link. There is no close button. Press and hold the title to show the crash message and Continue.
+- Shows a blocking unexpected error dialog titled `Oops an error occured!` with a warning icon, Clear cache & reload, and a crawl-proof support email on the next line after “You may contact our support team.” There is no close button. Press and hold the title to show the crash message and Continue.
 - Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
 - Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics.
 
