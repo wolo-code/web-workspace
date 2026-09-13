@@ -4,4 +4,4 @@ site/
 project/
 tiggu/
 firebase/
-
+.playwright-cli/
