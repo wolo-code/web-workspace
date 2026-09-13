@@ -6,12 +6,13 @@
 - Full-screen Google Maps UI, with optional OpenStreetMap, Apple Maps, Esri, and Microsoft Maps tiles.
 - Default map opens globally, then moves to a detected or selected city/location.
 - Supports terrain/map, Google Satellite view, OSM, Apple Maps, Esri, and Microsoft Maps modes.
-- Profile menus (account and login) let you enable or disable Google Maps, OSM, Apple Maps, Esri, and Microsoft Maps, and set one enabled source as default. Only the active default star stays visible until you hover the map source list. Appearance theme icons stay large until hover or focus, then shrink so System/Light/Dark labels can appear. Dark-mode hover uses a gray highlight. Section headings use the muted dialog label color, not the primary accent.
-- Includes floating controls for account, location, info (Wolo Code Input View), Wolo Code input (map views), map-type switcher in the bottom-right corner (map views), notifications, and footer links. Those icon controls show native hover tooltips except the appearance theme buttons. The first two launches show on-screen captions naming the Wolo Code Input View icons; the centered caption cluster stays vertically middle and can shift up on very small screens so bottom notifications stay visible. The map camera dpad sits on the same vertical band as Locate, matching the 39px map-type disc with a small gap to its left. Locate from Wolo Code Input View switches to the default map view and starts geolocation. The Wolo Code Input View map button always uses the terrain SVG, regardless of which map source that control will open.
+- On OSM, locating or opening a saved address caps at street zoom (about 19) without a toast. **Map data not yet available** appears only when OSM tiles 404 at the current zoom and the camera steps back.
+- Profile menus (account and login) let you enable or disable Google Maps, OSM, Apple Maps, Esri, and Microsoft Maps, and set one enabled source as default. The default inbound arrow sits before the enable toggle. Only the active default inbound arrow stays visible; an inactive inbound arrow appears when that map source row is hovered or focused. Extra padding sits below the last map source row. The default map source label uses the primary accent. Appearance theme tiles have extra space between them. Theme icons stay large until hover or focus, then shrink so System/Light/Dark labels can appear. The selected theme keeps its label visible in the primary accent. Light-mode theme icons stay gray instead of using the primary accent; dark-mode hover uses a gray highlight. Section headings use the muted dialog label color, not the primary accent.
+- Includes floating controls for account, location, info (Wolo Code Input View), Wolo Code input (map views), map-type switcher in the bottom-right corner (map views), notifications, and footer links. Those icon controls show native hover tooltips except the appearance theme buttons. The first two launches show icon captions on an 80% dark overlay over the Wolo Code Input View background, not the map; a tap anywhere or a 3-second timeout fades it away. The Info modal's bottom-left **Show icon labels** button closes the modal and shows that overlay again. The centered caption cluster stays vertically middle and can shift up on very small screens so bottom notifications stay visible. The map camera dpad sits on the same vertical band as Locate, matching the 39px map-type disc with a small gap to its left. Locate from Wolo Code Input View switches to the default map view and starts geolocation. The Wolo Code Input View map button always uses the terrain SVG, regardless of which map source that control will open.
 - Google’s logo and map-data credit stay on Google terrain/satellite only; OSM, Apple Maps, Esri, and Microsoft views hide that branding. Non-Google OSM/Esri/Microsoft attribution sits bottom-left after a small gap from the bottom-left chrome, close to the bottom edge, and stays on one line on widescreen. Apple Maps shows MapKit’s logo without a blur overlay or an extra Apple text label.
 - Apple Maps follows the Google overlay during drag with a CSS transform and only recommits MapKit’s camera on idle, zoom, or a large pan.
 - Location Wolo Label View (map InfoWindow) uses a dark card and high-contrast Wolo Code text in dark mode.
-- Address Panel follows light/dark theme, shows plus code in India as well as DIGIPIN with labels on the left and code values on the right, copies DIGIPIN in uppercase, copies drag-selected text without replacing the highlight, stays open after navigating with a DIGIPIN or plus code, and hides when Locate starts. Bottom toasts and the accuracy strip stack above the Address Panel in a shared flex dock so they do not overlap when the panel grows.
+- Address Panel follows light/dark theme, shows plus code in India as well as DIGIPIN with labels on the left and code values on the right, copies DIGIPIN in uppercase, copies drag-selected text without replacing the highlight, stays open after navigating with a DIGIPIN or plus code, and hides when Locate starts. Opening a saved address keeps the decoded latitude (the bottom panel no longer shifts the camera north). Saved title is the parent line and segment is indented beneath it, matching the account list. Bottom toasts and the accuracy strip stack above the Address Panel in a shared flex dock so they do not overlap when the panel grows.
 - Supports URL/query-driven startup:
   - Path-based Wolo Code decode links.
   - `_` suffix for satellite map startup.
@@ -79,14 +80,10 @@
 
 - Supports Firebase Authentication via FirebaseUI.
 - Shows login/sign-up dialog.
-- Shows account dialog with display name, email, appearance, and map source prefs.
-- Allows logout.
-- Provides "Current" save UI with:
-  - Title
-  - Segment
-  - Editable address text
-  - Save action
-- Shows saved address list with loading, empty, and end states.
+- Shows account dialog with display name, email, profile photo, appearance, and map source prefs.
+- Allows logout from an icon to the right of the name and email; the icon appears when hovering or focusing the profile photo, name, and email block (always visible on touch).
+- Shows saved address list with loading, empty, and end states. The list starts collapsed. Caret then plus sit on the right of the Saved heading; caret expands or collapses the list, and plus expands the add-current-address form. Clicking Saved or the empty space up to the caret also toggles the list. Expanding the list folds Appearance and Map source above it, keeping the profile picture row. The profile, Saved heading, and add form stay put; only the address list scrolls. The list reserves scrollbar space so address tiles keep the same width when the bar appears, and the scrollbar uses theme colors in light and dark mode. The dialog keeps a fixed width so expanding a saved address does not change it. Expanding a saved row animates the Wolo Code, street address, and actions open, and the dialog height grows with them. The Wolo Code is the first expanded block in the map-label format (`\ city` then `word-1 word-2 word-3 /`). The street address follows in the same Roboto, left-aligned gray treatment as the map Address Panel. Saved tiles are rounded on all corners. The title is the parent line; a segment is indented beneath it as the child, with padding below. A three-dot menu on the top right of each saved address holds Edit and Delete; on hover-capable pointers it appears only on tile hover, keyboard focus, or while the menu is open. In dark mode it uses the primary background with white dots. Edit opens the add form with that address's title, segment, and street text. Title and Segment fields hint with `e.g. Home` and `e.g. Main gate`, and the title, segment, and address fields share the same left inset as the tiles. Cancel sits on the left of the save section and Save stays on the right. Saving requires a located or decoded Wolo Code, except when updating an existing saved address. Go on a saved address stays on the right and opens it on the map at the decoded location, with the Address Panel showing that title and an indented segment.
+- Save current address from QR Label View (title, segment, address, and a top-left **save** label). Title and Segment fields hint with `e.g. Home` and `e.g. Main gate`. Preview uses an eye-only icon. Clicking the dimmed overlay outside the dialog closes it. A successful save shows **Address saved** above the overlay. Refreshing the address book does not replace that with a city-lookup error. Saved rows show the Wolo Code as `\ city` on the first line and `word-1 word-2 word-3 /` on the second.
 - Saved addresses can preserve Wolo Code plus user-entered metadata/address text.
 
 ### 9. Code Presentation, Sharing, and QR/Print
@@ -96,6 +93,7 @@
 - Supports QR preview.
 - Supports download.
 - Supports print.
+- Supports saving the current Wolo Code address from a **save** label in the top-left of the label dialog.
 - Uses `html2canvas` and `jspdf` for export-oriented rendering.
 
 ### 10. External Navigation / Maps Redirect
@@ -107,7 +105,7 @@
 
 ### 11. Informational and Legal UI
 
-- Intro explains the Wolo Code address format.
+- Intro explains the Wolo Code address format. The Info modal is vertically centered; dark mode drops the light outline around the brand lockup. A **Show icon labels** button in the bottom-left corner hides the modal and shows the icon caption overlay on Wolo Code Input View.
 - Shows sample input such as `Bengaluru cat apple tomato`.
 - Links to:
   - About
@@ -120,7 +118,7 @@
   - Social pages
 - Shows cookie/privacy notice.
 - Shows unsupported browser warning.
-- Shows unexpected error dialog with optional technical log.
+- Shows unexpected error dialog titled `Error occured!`, with equal-width Continue and Clear cache & reload actions.
 - Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
 - Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics.
 
