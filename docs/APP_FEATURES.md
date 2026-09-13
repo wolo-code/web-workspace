@@ -64,7 +64,7 @@
 
 ### 6. Unsupported City Request
 
-- When a selected location is not in the supported city database, the web app prompts the user to add the city.
+- When a selected location is not in the supported city database, the web app prompts the user to add the city. The Add city dialog follows light and dark theme, including the wait spinner.
 - User can confirm or decline the add-city request.
 - While waiting for backend processing, the app explains that manual intervention may take hours.
 - User can continue waiting or stop.
