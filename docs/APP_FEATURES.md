@@ -105,7 +105,7 @@
 
 ### 11. Informational and Legal UI
 
-- Intro explains the Wolo Code address format. The Info modal is vertically centered; dark mode drops the light outline around the brand lockup. A **show guide** button in the bottom-left corner hides the modal and shows the icon caption overlay on the current view (Wolo Code Input View or Map View). Hover does not underline that button. The credits/links view includes crawl-proof `support@wolo.codes` and linked map credits (OpenStreetMap, Esri, Microsoft, Apple Maps, Google Maps). That view does not show **show guide**, a version number, or an updated timestamp.
+- Intro explains the Wolo Code address format. The Info modal is vertically centered; dark mode drops the light outline around the brand lockup. A **show guide** button in the bottom-left corner hides the modal and shows the icon caption overlay on the current view (Wolo Code Input View or Map View). Hover does not underline that button. The bottom-right label shows `v` plus the three-part `version` from `Vars.tsv`; a tap expands it to `version.build` and the bake timestamp. The credits/links view includes crawl-proof `support@wolo.codes` and linked map credits (OpenStreetMap, Esri, Microsoft, Apple Maps, Google Maps). That view does not show **show guide**, a version number, or an updated timestamp.
 - Shows sample input such as `Bengaluru cat apple tomato`. Choosing **Try: Bengaluru, India** pans to that sample and animates zoom-in to street level.
 - Links to:
   - About
