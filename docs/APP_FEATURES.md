@@ -118,7 +118,7 @@
   - Social pages
 - Shows cookie/privacy notice.
 - Shows unsupported browser warning.
-- Shows unexpected error dialog titled `Error occured!`, with equal-width Continue and Clear cache & reload actions.
+- Shows unexpected error dialog titled `Error occured!` with a warning icon. Press and hold the title to show the crash message. Continue and Clear cache & reload share equal width.
 - Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
 - Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics.
 
