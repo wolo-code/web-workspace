@@ -105,7 +105,7 @@
 
 ### 11. Informational and Legal UI
 
-- Intro explains the Wolo Code address format. The Info modal is vertically centered; dark mode drops the light outline around the brand lockup. A **show guide** button in the bottom-left corner hides the modal and shows the icon caption overlay on the current view (Wolo Code Input View or Map View). Hover does not underline that button. The bottom-right label shows `v` plus the three-part `version` from `Vars.tsv` on the same bottom line as **show guide**. Hover or keyboard focus expands the label to `version.build` and shows the UTC timestamp under the version. A tap keeps the full version visible and shows local time under the version instead. Times overlay below that line so the version stays put. The credits/links view includes crawl-proof `support@wolo.codes` and linked map credits (OpenStreetMap, Esri, Microsoft, Apple Maps, Google Maps). That view does not show **show guide**, a version number, or an updated timestamp.
+- Intro explains the Wolo Code address format. The Info modal is vertically centered; dark mode drops the light outline around the brand lockup. A **show guide** button in the bottom-left corner hides the modal and shows the icon caption overlay on the current view (Wolo Code Input View or Map View). Hover does not underline that button. The bottom-right label shows `v` plus the three-part `version` from `Vars.tsv` on the same bottom line as **show guide**. Hover or keyboard focus expands the label to `version.build` and shows the UTC timestamp under the version. Hovering that timestamp shows elapsed time since the bake instead of a native Version tooltip. A tap keeps the full version visible and shows local time under the version; hovering that local stamp also shows elapsed time. Times overlay below that line so the version stays put. The credits/links view includes crawl-proof `support@wolo.codes` and linked map credits (OpenStreetMap, Esri, Microsoft, Apple Maps, Google Maps). That view does not show **show guide**, a version number, or an updated timestamp.
 - Shows sample input such as `Bengaluru cat apple tomato`. Choosing **Try: Bengaluru, India** pans to that sample and animates zoom-in to street level.
 - Links to:
   - About
@@ -120,7 +120,7 @@
 - Shows unsupported browser warning.
 - Shows a blocking unexpected error dialog titled `Oops an error occured!` with a warning icon, Clear cache & reload, and a crawl-proof support email on the next line after “You may contact our support team.” There is no close button. Press and hold the title to show the crash message and Continue. Clicking the dimmed overlay does not close it. Other overlay dialogs close when the overlay is clicked.
 - Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
-- Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics.
+- Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics. Production Hosting deploys purge the `wolo.codes` Cloudflare zone; development deploys purge `https://dev.wolo.codes` so stale HTML cannot linger on covers and JSON.
 
 ### 12. Backend and Third-Party Services
 
@@ -134,7 +134,7 @@
 | Firebase Analytics | Usage events |
 | Firebase Performance | Performance telemetry |
 | Sentry | Error reporting (CDN SRI verified before/after deploy) |
-| Cloudflare | Hosting/analytics |
+| Cloudflare | CDN in front of Firebase Hosting (zone purge after production deploy; origin purge after development deploy); analytics |
 | GeoFire | Encoded city center/location storage |
 | html2canvas / jsPDF | Printable/downloadable code artifacts |
 

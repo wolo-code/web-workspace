@@ -45,7 +45,7 @@ Local preview is Apache + Caddy at **https://wolo.local/**, not Docker `compose-
 - Site Framework is a submodule (`blank-org/cutie-framework`). Do not commit site-only CSS there.
 - Do not edit `public/` or `interim/` for source changes; they are Tiggu/generated. Production publish is `wolo-code/web-public` (`D:\Wolo\Web\project\build`); Firebase Hosting deploys on push to `main`.
 - Site source repo: `D:\Wolo\Web\site\project` → `wolo-code/web-site`.
-- Operator console: `https://console.wolo.local/` (OliveTin on `127.0.0.1:47822`). Start with `D:\Wolo\Web\console\Start-Console.ps1`. **Deploy to development** uses the Firebase CLI against project `waddress-5f30b` (`https://dev.wolo.codes`). **Deploy to production** pushes `web-public` `main` (`https://wolo.codes`). Hosts: `127.0.0.1 console.wolo.local`. Reload Caddy after `C:\programs\Caddy\caddyfile` changes.
+- Operator console: `https://console.wolo.local/` (OliveTin on `127.0.0.1:47822`). Start with `D:\Wolo\Web\console\Start-Console.ps1`. **Deploy to development** uses the Firebase CLI against project `waddress-5f30b` (`https://dev.wolo.codes`) and then purges Cloudflare for that origin. **Deploy to production** pushes `web-public` `main` (`https://wolo.codes`); Hosting CI purges the whole `wolo.codes` Cloudflare zone. Hosts: `127.0.0.1 console.wolo.local`. Reload Caddy after `C:\programs\Caddy\caddyfile` changes.
 
 ## Native Tiggu publish (Dockerless — preferred)
 
