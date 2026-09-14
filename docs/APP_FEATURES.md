@@ -17,7 +17,7 @@
   - Path-based Wolo Code decode links.
   - `_` suffix for satellite map startup.
   - `?q=lat,lng` startup for external geo intents.
-- Shows loader, top/bottom notifications, and recoverable error dialogs. The first-load bar remains one continuous cycle across bootstrap, IP-city lookup, and its retry delays.
+- Shows loader, top/bottom notifications, and recoverable error dialogs. The first-load bar remains one continuous cycle across bootstrap, IP-city lookup, and its retry delays; initial service-worker activation takes control without reloading the page into a second cycle.
 
 ### 2. Encode - Map Location to Wolo Code
 
