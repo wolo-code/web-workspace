@@ -23,7 +23,7 @@
 
 - User can switch to map mode and choose a location on the map.
 - User can use current GPS location to encode the current position.
-- User can search for a place and encode that selected location. In Map View the search field stays focused so typing can start without clicking it first.
+- User can search for a place and encode that selected location. In Map View the search field stays focused so typing can start without clicking it first, except during the icon guide, when the caret is hidden.
 - Reverse geocoding extracts the city-level Google Place ID.
 - Firebase Realtime Database resolves city metadata and city center.
 - Wolo algorithm encodes the selected coordinate into three 10-bit word indexes.
