@@ -45,15 +45,15 @@ Local preview is Apache + Caddy at **https://wolo.local/**, not Docker `compose-
 - Site Framework is a submodule (`blank-org/cutie-framework`). Do not commit site-only CSS there.
 - Do not edit `public/` or `interim/` for source changes; they are Tiggu/generated. Production publish is `wolo-code/web-public` (`D:\Wolo\Web\project\build`); Firebase Hosting deploys on push to `main`.
 - Site source repo: `D:\Wolo\Web\site\project` → `wolo-code/web-site`.
-- Operator console: `https://console.wolo.local/` (OliveTin on `127.0.0.1:47822`). Start with `D:\Wolo\Web\console\Start-Console.ps1`. **Deploy to development** uses the Firebase CLI against project `waddress-5f30b` (`https://dev.wolo.codes`) and then purges Cloudflare for that origin. **Deploy to production** pushes `web-public` `main` (`https://wolo.codes`); Hosting CI purges the whole `wolo.codes` Cloudflare zone. Hosts: `127.0.0.1 console.wolo.local`. Reload Caddy after `C:\programs\Caddy\caddyfile` changes.
+- Operator console: `https://console.wolo.local/` (OliveTin on `127.0.0.1:47822`). Start with `D:\Wolo\Web\console\Start-Console.ps1`. **Render merged site** supports choosing Environment (`dev` or `prod`). **Deploy to development** verifies or bakes the dev bundle into `project\build-dev` (with dev keys: `waddress-5f30b`, `dev.wolo.codes`, dev Sentry/GA), deploys using Firebase CLI against `waddress-5f30b`, and purges Cloudflare for that origin. **Deploy to production** asserts production keys (`wolo-codes`, `wolo.codes`) in `project\build`, commits and pushes `web-public` `main`; Hosting CI deploys and purges the whole `wolo.codes` zone. Environment safety gates abort cross-deployment in both directions. Hosts: `127.0.0.1 console.wolo.local`. Reload Caddy after `C:\programs\Caddy\caddyfile` changes.
 
 ## Native Tiggu publish (Dockerless — preferred)
 
-Site/app HTML bakes and the production merge should use the native Windows pipeline — **not** Docker by default.
+Site/app HTML bakes and the production/development merge should use the native Windows pipeline — **not** Docker by default.
 
 1. **Once:** run `project\Install-NativePublishTools.ps1` (downloads pinned minify + Closure Compiler into `D:\Wolo\Web\.native-tools`). Needs Java (Android Studio JBR) and `python` on PATH.
-2. **Bake one project:** `. .\project\PublishRunner.ps1; Invoke-WoloNativeTiggu -Kind site` (or `-Kind app`). Origin/Host: site → `http://127.0.0.1:8084` + `wolo.local`; app → `:8085` + `wolo.local`.
-3. **Full merge:** `.\project\render-native.ps1` (same order as `render.sh`: increment app `build` in `app/project/Root/Config/Vars.tsv`, tiggu app, tiggu site, copy site then app into `project/build` so app overwrites). Does not replace `firebase.json`. Native bake and Firebase Hosting CI run `project/build/scripts/verify-sri.mjs` so stale `integrity` hashes (Sentry CDN) fail before deploy. Pass `-SkipBuildIncrement` (or `TIGGU_SKIP_BUILD_INCREMENT=1` for `render.sh`) to bake without bumping the Info dialog build number.
+2. **Bake one project:** `. .\project\PublishRunner.ps1; Invoke-WoloNativeTiggu -Kind site -Mode prod` (or `-Kind app -Mode dev`). Origin/Host: site → `http://127.0.0.1:8084` + `wolo.local`; app → `:8085` + `wolo.local`. Tiggu passes `TIGGU_MODE` / bake mode (`dev` or `prod`), selecting `Vars_dev.tsv` / `Vars_prod.tsv` configs.
+3. **Full merge:** `.\project\render-native.ps1 -Mode prod` (merges into `project\build`) or `.\project\render-native.ps1 -Mode dev` (merges into `project\build-dev`). In prod mode, bumps the app build number; in dev mode, build number increment is skipped. App + site public outputs are merged (app overwrites `/`). Runs SRI gate and asset verification.
 4. Apache + Host `wolo.local` on :8084/:8085 must respond before bake (runner probes). Docker `compose-dev` remains an optional fallback only.
 
 ## Resource → URL list
