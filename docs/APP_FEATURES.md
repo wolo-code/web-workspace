@@ -153,3 +153,5 @@ Core backend resources already used or planned by the iOS app:
 - Header theme menu (light / dark / system). Downloads live in the site menu, not the header. The footer has store badges and wolo.codes/get, not a download icon.
 - Opening the site menu from a long article slides the article out first (full height). After that slide, the frame settles so the footer sits at the bottom of the shorter menu page. The footer then fades and moves in from below. Height is flex-column, not a measured canvas/min-height.
 - Footer includes Play Store and App Store badges (App Store is coming soon).
+
+Scanner controls: Status and privacy messages appear above the controls. Capture/gallery/type and rescan/zoom/proceed use matching three-column layouts, with side buttons centered in the available space and each row vertically centered in the remaining area. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
