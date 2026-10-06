@@ -155,3 +155,5 @@ Core backend resources already used or planned by the iOS app:
 - Footer includes Play Store and App Store badges (App Store is coming soon).
 
 Scanner controls: Status and privacy messages appear above the controls. Capture/gallery/type and rescan/zoom/proceed use matching three-column layouts, with side buttons centered in the available space and each row vertically centered in the remaining area. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
+
+Scanner review: A List icon button to the left of the editable city opens recognized, recent, IP and selected city choices; selecting a city updates the scanner review only. City and Word labels use a faded accent, recognized values use larger type, and Use Code/Cancel are spread across the row. Zoom Reset uses an accessible reset-arrow icon.
