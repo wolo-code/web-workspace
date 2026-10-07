@@ -23,3 +23,5 @@ The label and Info modal logo groups share a 12px right offset with the centered
 The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.
 
 In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The split artwork shows one line above two; the merge artwork shows two lines above one. Both use a simple filled downward triangle caret in the primary accent (#69B7CF) between the lines.
+
+Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input.
