@@ -15,3 +15,5 @@ Guide captions: the decode scanner and its parent stay above the guide overlay. 
 The Map View scanner and search artwork use the primary accent (#69B7CF).
 
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
+
+The label and Info modal logo groups share a 12px right offset with the centered main-page logo. The desktop main-page logo shifts toward the right edge without extending beyond the viewport.
