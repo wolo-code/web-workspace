@@ -167,3 +167,5 @@ Scanner zoom reset: The reset glyph is centered in a fixed-width middle slot bet
 Scanner City label sits just outside the input's left edge with an 8px gap, preserving the city field and embedded chooser positions.
 
 Scanner city choices open in a centered modal popup when the city icon is clicked, above the scanner with a dimmed backdrop. Selection updates the review city and dismisses the popup; Escape or backdrop click also dismisses it.
+
+Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at normal zoom. Changed zoom displays the reset glyph in the same slot, retaining the existing reset target, percentage position, and behavior.
