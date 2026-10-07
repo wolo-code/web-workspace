@@ -1,5 +1,7 @@
 # App sections
 
+The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs and the Overlay Layer.
+
 ## Bookmarks modal
 
 Saved tiles show the title, optional segment, and compact Go button in the bottom-right corner with padding while collapsed. Go opens the saved location; tapping the rest of the tile expands the Wolo Code and street address. The three-dot menu provides Edit and Delete.

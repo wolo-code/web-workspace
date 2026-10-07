@@ -1,6 +1,8 @@
 
 ## Web App Features
 
+Bottom notifications stay above modal dialogs and their dimmed overlay so modal action feedback remains visible.
+
 ### 1. Primary Map Experience
 
 - Full-screen Google Maps UI, with optional OpenStreetMap, Apple Maps, Esri, and Microsoft Maps tiles.
