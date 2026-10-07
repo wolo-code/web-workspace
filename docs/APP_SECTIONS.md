@@ -4,7 +4,7 @@ The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs an
 
 ## Bookmarks modal
 
-Saved tiles show the title, optional segment, and compact Go button in the bottom-right corner with padding while collapsed. Go opens the saved location; tapping the rest of the tile expands the Wolo Code and street address. The three-dot menu provides icon-labeled Edit, Sync to cloud for local bookmarks, and Delete. Its size and right inset match Go. Titles and indented subtitles stay left-aligned. The expanded Wolo Code keeps its city line on the left above centered code words, matching the info display layout. Street address lines stay centered.
+Saved tiles show the title, optional segment, and compact Go button in the bottom-right corner with padding while collapsed. When expanded, Go moves to the bottom-right of the full tile with space below the details. Go opens the saved location; tapping the rest of the tile expands the Wolo Code and street address. The three-dot menu provides icon-labeled Edit, Sync to cloud for local bookmarks, and Delete. Its size and right inset match Go. Titles and indented subtitles stay left-aligned. The expanded Wolo Code keeps its city line on the left above centered code words, matching the info display layout. Street address lines stay centered.
 
 The add/edit form contains Title, Segment, Address line 1 (optional), and Address line 2 (optional). Users can provide either or both address lines, or leave both blank. Saved lines display together in the expanded tile and map Address Panel. Existing bookmarks remain editable.
 
