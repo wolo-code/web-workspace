@@ -178,3 +178,5 @@ Scanner capture control is 20% larger. Sparse-text OCR preserves separators and 
 Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
 
 Scanner gallery photos preserve native pixel dimensions for the preview, original source and OCR; zoom and pan no longer use a photo reduced to 1600px wide.
+
+Scanner city recognition reads OCR words above the three-word code inside an inferred container with a preferred golden ratio. City text is preserved instead of fuzzy-matched against the Wolo dictionary. Live and gallery review show separate blue container, gold city and green code rectangles, mapped through crop, capture and framing adjustments. The container comes from text geometry, not printed-border detection.
