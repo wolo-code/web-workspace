@@ -174,3 +174,5 @@ Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Use Code stays disabled until all three words are complete and valid. Recognized or suggested cities display a rounded outlined tag, which clears when edited to an unknown city.
 
 Scanner capture control is 20% larger. Sparse-text OCR preserves separators and reads the visible guide region. The detected rectangle bounds recognized words; three stable matches trigger capture without requiring a printed border or a 3:1 text shape.
+
+Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
