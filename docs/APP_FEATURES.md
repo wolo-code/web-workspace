@@ -196,6 +196,6 @@ The profile artwork (default icon and signed-in avatar) is 42px with a padded ta
 
 The label and Info modal logo groups share a 12px right offset with the centered main-page logo. The desktop main-page logo shifts toward the right edge without extending beyond the viewport.
 
-In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The split artwork shows one line above two; the merge artwork shows two lines above one. Both use a simple filled downward triangle caret in the primary accent (#69B7CF) between the lines.
+In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The icon sits at the bottom-right of the address line 1 field. Its gray lines stay the same in both states; only the filled primary-accent (#69B7CF) triangle changes direction, pointing down to split and up to merge.
 
 Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input.
