@@ -183,3 +183,5 @@ Scanner gallery photos preserve native pixel dimensions for the preview, origina
 Scanner city recognition reads OCR words above the three-word code inside an inferred container with a preferred golden ratio. City text is preserved instead of fuzzy-matched against the Wolo dictionary. Live and gallery review show separate blue container, gold city and green code rectangles, mapped through crop, capture and framing adjustments. The container comes from text geometry, not printed-border detection.
 
 Map View: Scan is inside the right end of the search field. Wide layouts use a rectangular Bookmarks button flush against the search bar's left edge; narrow layouts keep Bookmarks above the search row.
+
+Guide captions: the decode scanner and its parent stay above the guide overlay. Scan and Saved captions appear above their decode buttons; the map Saved caption also appears above its bookmark button. Static copyright footer text hides the browser caret without affecting input cursors.
