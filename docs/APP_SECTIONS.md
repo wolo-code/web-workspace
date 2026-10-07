@@ -21,3 +21,5 @@ The label and Info modal logo groups share a 12px right offset with the centered
 ## Label modal
 
 The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.
+
+In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The split artwork branches one line into two; the merge artwork combines two lines into one.
