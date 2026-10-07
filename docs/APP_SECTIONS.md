@@ -17,3 +17,7 @@ The Map View scanner and search artwork use the primary accent (#69B7CF).
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
 
 The label and Info modal logo groups share a 12px right offset with the centered main-page logo. The desktop main-page logo shifts toward the right edge without extending beyond the viewport.
+
+## Label modal
+
+The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.

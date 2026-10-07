@@ -91,6 +91,8 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 9. Code Presentation, Sharing, and QR/Print
 
+- The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.
+
 - Web app has a printable/shareable Wolo Code layout.
 - Includes title, segment, Wolo Code, editable address, and `www.wolo.codes`.
 - Supports QR preview.
