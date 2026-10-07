@@ -180,3 +180,5 @@ Scanner detection adds 10% centered padding around recognized text and fills rev
 Scanner gallery photos preserve native pixel dimensions for the preview, original source and OCR; zoom and pan no longer use a photo reduced to 1600px wide.
 
 Scanner city recognition reads OCR words above the three-word code inside an inferred container with a preferred golden ratio. City text is preserved instead of fuzzy-matched against the Wolo dictionary. Live and gallery review show separate blue container, gold city and green code rectangles, mapped through crop, capture and framing adjustments. The container comes from text geometry, not printed-border detection.
+
+Map View: Scan is inside the right end of the search field. Wide layouts use a rectangular Bookmarks button flush against the search bar's left edge; narrow layouts keep Bookmarks above the search row.
