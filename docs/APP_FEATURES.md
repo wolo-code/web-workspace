@@ -176,3 +176,5 @@ Scanner review validation: All three words must match the Wolo word list, ignori
 Scanner capture control is 20% larger. Sparse-text OCR preserves separators and reads the visible guide region. The detected rectangle bounds recognized words; three stable matches trigger capture without requiring a printed border or a 3:1 text shape.
 
 Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
+
+Scanner gallery photos preserve native pixel dimensions for the preview, original source and OCR; zoom and pan no longer use a photo reduced to 1600px wide.
