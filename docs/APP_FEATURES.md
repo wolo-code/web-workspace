@@ -201,3 +201,5 @@ In both Saved and Label modals, the address split/merge icon appears only while 
 Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input.
 
 Saved-address navigation and the info-window Address action use the same Address Panel renderer. Both preserve the separator between saved address lines and show the address QR button whenever the address has nonempty text. The QR payload retains both lines in order.
+
+Scanner region inspection: hold the capture camera button for 500ms to show container, city, and three-word outlines; release hides them without capturing. A tap captures normally. The estimated rounded container encloses both the city and all three words, including city names wider than the code row.
