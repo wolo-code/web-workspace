@@ -178,13 +178,13 @@ Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at
 
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Use Code stays disabled until all three words are complete and valid. Recognized or suggested cities display a rounded outlined tag, which clears when edited to an unknown city.
 
-Scanner capture control is 20% larger. Sparse-text OCR reads the visible guide after detecting the printed rectangle or rounded rectangle. Three stable box-contained matches trigger capture without imposing a text aspect ratio.
+Scanner capture control is 20% larger. Sparse-text OCR reads the visible guide after detecting the inner code box and outer card boundary. Three stable box-contained matches trigger capture without imposing a text aspect ratio.
 
 Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
 
 Scanner gallery photos preserve native pixel dimensions for the preview, original source and OCR; zoom and pan no longer use a photo reduced to 1600px wide.
 
-Scanner recognition detects the actual printed rectangle or rounded rectangle first, reads three Wolo words inside it, and reads the city above the words within that same box. Title/section above and address below are optional separate match metadata. No golden-ratio container is inferred from text; dictionary correction applies only to the code words. Blue container, gold city and green word outlines follow capture and framing changes.
+Scanner recognition detects the actual printed rectangle or rounded rectangle first, reads three Wolo words inside it, and reads the city above the words within that same box. Title/segment above and address below are optional separate match metadata. No golden-ratio container is inferred from text; dictionary correction applies only to the code words. Blue container, gold city and green word outlines follow capture and framing changes.
 
 Map View: Scan is inside the right end of the search field. Wide layouts use a rectangular Bookmarks button flush against the search bar's left edge; narrow layouts keep Bookmarks above the search row.
 
@@ -203,3 +203,5 @@ Wide Map View uses a 42px by 42px bookmark container joined without a gap to the
 Saved-address navigation and the info-window Address action use the same Address Panel renderer. Both preserve the separator between saved address lines and show the address QR button whenever the address has nonempty text. The QR payload retains both lines in order.
 
 Scanner region inspection: hold the capture camera button for 500ms to show the detected printed container, city, and three-word outlines; release hides them without capturing. A tap captures normally. The container follows the physical rectangle or rounded rectangle, including cities wider than the code row.
+
+Scanner card and optional details: detect the inner Wolo code box and the whole card against its background separately. The initial dashed frame is only a guide; live and repeat recognition use the full image, with pan/zoom changing candidate focus. The Address icon between Use Code and Cancel expands optional Title, Segment, Address line 1 and Address line 2 fields. Title and Segment are separate rows above the inner box; both address parts are below it inside the card, line 1 first with blank-paragraph spacing before line 2. Wrapped rows stay in their paragraph. Edited values survive recognition of the same card and flow into the decoded location and its label/save editors only on Use Code. The core code remains usable when the card or optional text is unreadable. Region inspection adds a purple whole-card outline independently of the guide.
