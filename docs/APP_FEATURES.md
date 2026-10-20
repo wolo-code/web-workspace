@@ -178,13 +178,13 @@ Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at
 
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Use Code stays disabled until all three words are complete and valid. Recognized or suggested cities display a rounded outlined tag, which clears when edited to an unknown city.
 
-Scanner capture control is 20% larger. Sparse-text OCR preserves separators and reads the visible guide region. The detected rectangle bounds recognized words; three stable matches trigger capture without requiring a printed border or a 3:1 text shape.
+Scanner capture control is 20% larger. Sparse-text OCR reads the visible guide after detecting the printed rectangle or rounded rectangle. Three stable box-contained matches trigger capture without imposing a text aspect ratio.
 
 Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
 
 Scanner gallery photos preserve native pixel dimensions for the preview, original source and OCR; zoom and pan no longer use a photo reduced to 1600px wide.
 
-Scanner city recognition reads OCR words above the three-word code inside an inferred container with a preferred golden ratio. City text is preserved instead of fuzzy-matched against the Wolo dictionary. Live and gallery review show separate blue container, gold city and green code rectangles, mapped through crop, capture and framing adjustments. The container comes from text geometry, not printed-border detection.
+Scanner recognition detects the actual printed rectangle or rounded rectangle first, reads three Wolo words inside it, and reads the city above the words within that same box. Title/section above and address below are optional separate match metadata. No golden-ratio container is inferred from text; dictionary correction applies only to the code words. Blue container, gold city and green word outlines follow capture and framing changes.
 
 Map View: Scan is inside the right end of the search field. Wide layouts use a rectangular Bookmarks button flush against the search bar's left edge; narrow layouts keep Bookmarks above the search row.
 
@@ -202,4 +202,4 @@ Wide Map View uses a 42px by 42px bookmark container joined without a gap to the
 
 Saved-address navigation and the info-window Address action use the same Address Panel renderer. Both preserve the separator between saved address lines and show the address QR button whenever the address has nonempty text. The QR payload retains both lines in order.
 
-Scanner region inspection: hold the capture camera button for 500ms to show container, city, and three-word outlines; release hides them without capturing. A tap captures normally. The estimated rounded container encloses both the city and all three words, including city names wider than the code row.
+Scanner region inspection: hold the capture camera button for 500ms to show the detected printed container, city, and three-word outlines; release hides them without capturing. A tap captures normally. The container follows the physical rectangle or rounded rectangle, including cities wider than the code row.
