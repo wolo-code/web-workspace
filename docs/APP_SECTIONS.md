@@ -24,7 +24,7 @@ The Label modal also provides the optional Address split/merge control with line
 
 In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The icon sits at the bottom-right of the address line 1 field. Its gray lines stay the same in both states; only the filled primary-accent (#69B7CF) triangle changes direction, pointing down to split and up to merge.
 
-Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input. Controls in Map View (Place Search Input, Bookmarks, Account, Info, Wolo Code, Locate, Switch map, and Camera D-pad) replicate the transparent background effect of the Go button (#decode_button, using #ffffff22 in light mode and #22224422 in dark mode).
+Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input. Controls in Map View (Place Search Input, Bookmarks, Account, Info, Wolo Code, Locate, Switch map, and Camera D-pad) replicate the transparent background effect of the Go button (#decode_button, using rgb(255 255 255 / 50%) in light mode and rgb(34 34 68 / 50%) in dark mode with frosted glass blur).
 
 Saved-address navigation and the info-window Address action use the same Address Panel renderer. Both preserve the separator between saved address lines and show the address QR button whenever the address has nonempty text. The QR payload retains both lines in order.
 
