@@ -1,5 +1,10 @@
 # App sections
 
+## Country and regional choices in city selectors
+
+The nearby, matching-name, and previous-city dialogs include the shared `CityRegionOptions.php` panel. **Use a regional code** lists relevant country/region anchors and provides manual region/index entry. **Propose a city** opens the existing proposal form. Empty previous-city history no longer disables the menu. The map selector labels its active city or regional anchor as **Current reference**.
+
+
 ## Regional reference and city proposal controls
 
 | Section | Controls | Behavior |
