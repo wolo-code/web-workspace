@@ -1,4 +1,14 @@
 
+
+## Named regions and city proposals
+
+- City-based three-word codes retain their existing origins and encoding. Unavailable or out-of-range cities can fall back to a named region and compact local anchor index using the same word codec.
+- The bundled frozen v1 registry activates 321 source-matched regions; 160 additional names remain pending. Twelve fallback namespaces cover every half-degree global tile. Overlapping region/index references can share one center and identical three words.
+- Address Panel's **Code reference** selector switches between available regional alternatives. Regional links, previous contexts, and saved addresses resolve locally, including offline. See the app's `docs/REGIONAL_ANCHORS.md` for fixed geometry conventions, provenance, polar handling, and compatibility.
+- **Propose a city** in full Info view and Address Panel accepts a city name, optional country/region, and optional selected map location. It writes a request without automatically creating a city.
+- After the request is acknowledged, the user's email composer opens to support@wolo.codes with `Wolo add city request <request-id>` in the subject and editable details in the body. The saved request ID and **Add details by email** fallback remain visible. Failed writes do not announce success or open drafts; duplicate in-flight clicks are ignored.
+- The admin request console supports proposals without coordinates; the reviewer selects a center. Admin notification subjects also include the request ID.
+
 ## Web App Features
 
 Bottom notifications stay above modal dialogs and their dimmed overlay so modal action feedback remains visible.
@@ -64,13 +74,11 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Provides a "Proceed" control so users can accept the current fix before the watch completes. The top bar loader shows until the first GPS fix; then it hides so the zoom-in animation is the progress cue. Locate zooms to that first accuracy circle once and does not add a zoom-out/zoom-in snap at the end. While accuracy stays at `99+`, locate counts one sample per second even if the browser does not emit new GPS events, and auto-proceeds after five consecutive samples, unless locate is in long-press override (the locate icon stays blinking and auto-proceed is skipped).
 - Handles permission denied, unsupported browser geolocation, invalid `0,0` positions, timeout, and low-accuracy states.
 
-### 6. Unsupported City Request
+### 6. City Proposals
 
-- When a selected location is not in the supported city database, the web app prompts the user to add the city. The Add city dialog follows light and dark theme, including the wait spinner.
-- User can confirm or decline the add-city request.
-- While waiting for backend processing, the app explains that manual intervention may take hours.
-- User can continue waiting or stop.
-- Backend endpoint referenced in existing iOS planning: `POST /api/add-city`.
+- Propose a city from Info or the Address Panel with an optional selected location.
+- Acknowledged database requests display their ID and open an editable email draft with that ID in its subject; a fallback link remains available.
+- Requests await review without an indefinite processing spinner. Network or permission failures preserve the form for retry.
 
 ### 7. Place Search
 
