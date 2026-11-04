@@ -1,5 +1,9 @@
 # App sections
 
+## Map View: OpenStreetMap coverage
+
+When location navigation or auto zoom reaches unavailable OSM tiles, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step; events from older zoom levels do not affect the current view.
+
 ## Country and regional choices in city selectors
 
 The nearby, matching-name, and previous-city dialogs include the shared `CityRegionOptions.php` panel. **Use a regional code** lists relevant country/region anchors and provides manual region/index entry. **Propose a city** opens the existing proposal form. Empty previous-city history no longer disables the menu. The map selector labels its active city or regional anchor as **Current reference**.
