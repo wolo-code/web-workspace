@@ -1,5 +1,9 @@
 # App sections
 
+## Map View: camera navigation
+
+The Terrain Map Canvas and alternate map sources keep manual pan and zoom in control: wheel, touch, drag, double-click, and camera-key input cancel automatic location focus, including its delayed final fit and chrome pan. New location selections, map-source changes, and entering Wolo Code Input View discard earlier camera callbacks. Bounds focus uses the full projected bounds and actual map dimensions with consistent padding, including across the dateline, so it does not zoom in too far before fitting back out. Focusing the current center works without a pan event, and camera limits stop animation cleanly.
+
 ## Map View: OpenStreetMap coverage
 
 When location navigation or auto zoom reaches unavailable OSM tiles, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step; events from older zoom levels do not affect the current view.
