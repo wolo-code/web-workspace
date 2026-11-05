@@ -96,7 +96,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 7. Place Search
 
-- Nearby and matching-city choices share geographic headings for common country and administrative paths. Dotted branches lead to selectable cities.
+- Nearby and matching-city choices share geographic headings for common country and administrative paths. Dotted branches lead to selectable cities. The map selector puts the current city or region first in the same list, with a dot and a Current label. Alternate city rows are labeled Nearby.
 
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
