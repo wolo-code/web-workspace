@@ -10,6 +10,8 @@ When location navigation or auto zoom reaches unavailable OSM tiles, the map ste
 
 ## Country and regional choices in city selectors
 
+Nearby and matching-city lists show each shared geographic path once, with dotted branches to the city buttons. A standalone result shows its full path, and each grouped button has its full path as its accessible name.
+
 Map View place search uses a city as the code reference when a registered city grid covers the selected position. The country or regional reference is the fallback.
 
 The nearby, matching-name, and previous-city dialogs include the shared `CityRegionOptions.php` panel. **Use a regional code** lists relevant country/region anchors and provides manual region/index entry. **Propose a city** opens the existing proposal form. Empty previous-city history no longer disables the menu. The map selector labels its active city or regional anchor as **Current reference**.

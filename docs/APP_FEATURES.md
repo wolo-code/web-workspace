@@ -96,6 +96,8 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 7. Place Search
 
+- Nearby and matching-city choices share geographic headings for common country and administrative paths. Dotted branches lead to selectable cities.
+
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
 - A selected search result becomes the active map position. Encoding prefers its registered city, then the closest registered city whose code grid covers the position, then a regional code.
