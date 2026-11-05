@@ -98,7 +98,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
-- Search result can become the active map position and be encoded.
+- A selected search result becomes the active map position. Encoding prefers its registered city, then the closest registered city whose code grid covers the position, then a regional code.
 
 ### 8. Account, Login, and Saved Addresses
 
