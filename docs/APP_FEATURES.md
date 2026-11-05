@@ -5,6 +5,8 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 1. Primary Map Experience
 
+The map info window scrolls when its content exceeds the available width or height, keeping the Wolo Code and location actions accessible on macOS Safari and in small map views.
+
 - Full-screen Google Maps UI, with optional OpenStreetMap, Apple Maps, Esri, and Microsoft Maps tiles.
 - Default map opens globally at a zoom that fills the viewport height (no blank bands at the top or bottom), then moves to a detected or selected city/location. Switching from Wolo Code Input View waits for the Google map object before calling `setMapTypeId`, so an early tap does not throw.
 - Supports terrain/map, Google Satellite view, OSM, Apple Maps, Esri, and Microsoft Maps modes.
