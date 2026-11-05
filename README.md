@@ -15,3 +15,9 @@ or a detached `HEAD` are skipped and reported; a pull failure in one repository
 does not stop the remaining repositories from being processed.
 
 Use `-TopLevelOnly` when only the aggregator checkout should be updated.
+
+On macOS, run the shell version:
+
+```bash
+./update-repositories.sh --recurse-submodules
+```
