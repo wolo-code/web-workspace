@@ -49,7 +49,7 @@ The add/edit form contains Title, Segment, and one optional Address field with a
 
 Local bookmarks have an info icon in the top-left corner. Clicking it shows storage and sync guidance in the bottom notification pill. Sync to cloud is in the three-dot menu. Sync is dimmed while signed out and opens sign-in when clicked; while signed in, it saves the bookmark to the cloud before removing the local copy.
 
-Guide captions: the decode scanner and its parent stay above the guide overlay. Scan and Saved captions appear above their decode buttons; the map Saved caption appears below its bookmark button. Previous stays enabled during the guide even when city history is empty; its normal availability returns after dismissal. Static copyright footer text hides the browser caret without affecting input cursors.
+Guide captions: the decode scanner and its parent stay above the guide overlay. Scan and Saved captions appear above their decode buttons; the map Saved caption appears below its bookmark button. Previous stays enabled during the guide even when city history is empty; its normal availability returns after dismissal. Static copyright footer text hides the browser caret without affecting input cursors. In map views, the copyright year link is white with a dark shadow for contrast over map tiles.
 
 The Map View scanner and search artwork use the primary accent (#69B7CF). Both Map View and Wolo Code Input View use `Scan.svg`, a scanner icon with four corner markers and a centered filled rounded rectangle.
 
