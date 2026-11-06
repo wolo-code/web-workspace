@@ -21,7 +21,7 @@ Regional references show an outlined numeric index badge immediately after the n
 
 The Address Panel omits the Code reference selector and Propose a city button.
 
-The full Info view has City and Region tabs for the two plain-text formats. A centered rule fades at both ends directly below the tabs. The Region tab shows a Nepal code for Mount Everest. Both panels share the same layout so the usage steps stay in place when switching tabs.
+The full Info view has City and Region tabs for the two plain-text formats. The tab separator and fading rule share the same center. The Region tab centers the Nepal code above the Mount Everest caption. Both panels share the same layout so the usage steps stay in place when switching tabs.
 
 ## Regional reference and city proposal controls
 
