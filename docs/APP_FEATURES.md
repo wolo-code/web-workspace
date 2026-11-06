@@ -4,6 +4,7 @@
 
 - Bounds-based zoom uses the full projected area, the map canvas size, and the same padding as the final fit, preventing a zoom-in overshoot followed by a zoom-out correction. Dateline-crossing bounds and the viewport minimum zoom are respected.
 - Manual wheel, touch, drag, double-click, and camera-key input cancel pending focus timers and pan callbacks. A newer location selection, map-source change, or return to Wolo Code Input View also cancels obsolete camera work.
+- Trackpad pinches reported as Ctrl+wheel ignore small direction reversals within a gesture so a slight movement at the end of a zoom-out does not trigger a zoom-in step.
 - Focusing the current map center starts zoom without waiting for a no-op pan. Provider zoom clamps end the animation without repeated steps.
 
 ## Country regions and city menu actions
