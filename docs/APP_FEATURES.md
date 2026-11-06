@@ -62,6 +62,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 ### 3. Decode - Wolo Code to Map Location
 
 - User can enter a Wolo Code address in the format `City Word 1 Word 2 Word 3`.
+- Enter in the Wolo Code input runs Go. Shift+Enter inserts a line break.
 - City can be omitted when the current city context is known.
 - Last three tokens are treated as the code words.
 - Preceding tokens are treated as the city.
