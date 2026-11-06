@@ -21,7 +21,7 @@ Regional references show an outlined numeric index badge immediately after the n
 
 The Address Panel omits the Code reference selector and Propose a city button.
 
-The full Info view has City and Region tabs for the two plain-text formats. The equal-width tabs keep a visible pipe centered above the fading rule. Both examples use inline “e.g.”, and the Region tab places “Mt. Everest” below its example at the right. Both panels share the same layout so the usage steps stay in place when switching tabs.
+The full Info view has City and Region tabs for the two plain-text formats. The equal-width tabs keep a visible pipe centered above the fading rule. Both examples use inline “e.g.”, and the Region tab places “Mt. Everest” below its example, aligned with the right end of the fading rule. Both panels share the same layout so the usage steps stay in place when switching tabs.
 
 ## Regional reference and city proposal controls
 
