@@ -39,6 +39,8 @@ The full Info view has City and Region tabs for the two plain-text formats. The 
 
 The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs and the Overlay Layer.
 
+Long-pressing the external maps button in the Map View info window copies the Wolo Code jump link as plain text, including its trailing slash.
+
 ## Bookmarks modal
 
 Saved tiles show the title, optional segment, and compact Go button in the bottom-right corner with padding while collapsed. When expanded, Go moves to the bottom-right of the full tile with space below the details. Go opens the saved location; tapping the rest of the tile expands the Wolo Code and street address. The three-dot menu provides icon-labeled Edit, Sync to cloud for local bookmarks, and Delete. Its size and right inset match Go. The title bar stays full-width in both collapsed and expanded states. Titles and indented subtitles stay anchored on the left; clicking their header does not select text or display a caret. The expanded Wolo Code block is left-aligned as a group at the same indent as the segment. Within it, the first letter of the city and the first letter of the first code word share exactly the same x-position, matching the info display layout. The leading slash occupies its own grid column; the city and code words share the second column so their starting positions cannot drift. Street address lines stay centered, with a blank line between address line 1 and 2 when both are nonempty. Single-line addresses get no extra gap.
