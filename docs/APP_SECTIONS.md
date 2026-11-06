@@ -21,7 +21,7 @@ Regional references show an outlined numeric index badge immediately after the n
 
 The Address Panel omits the Code reference selector and Propose a city button.
 
-The full Info view shows plain-text city and regional formats and explains the regional anchor index.
+The full Info view has City and Region tabs for the two plain-text formats. The Region tab explains the anchor index, and the usage steps are shared.
 
 ## Regional reference and city proposal controls
 
