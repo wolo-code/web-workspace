@@ -21,11 +21,13 @@ Regional references show an outlined numeric index badge immediately after the n
 
 The Address Panel omits the Code reference selector and Propose a city button.
 
+The full Info view shows plain-text city and regional formats and explains the regional anchor index.
+
 ## Regional reference and city proposal controls
 
 | Section | Controls | Behavior |
 | --- | --- | --- |
-| City Proposal Modal View | `#no_city_message`, `#no_city_name`, `#no_city_country`, `#no_city_include_location` | Open from full Info view or city selectors. Name is required; country and selected location are optional. |
+| City Proposal Modal View | `#no_city_message`, `#no_city_name`, `#no_city_country`, `#no_city_include_location` | Open from city selectors. Name is required; country and selected location are optional. |
 | City proposal confirmation | `#no_city_request_id`, `#no_city_email_details` | Displays an acknowledged request ID, opens an editable email draft, and retains a fallback email link. Closing does not cancel an already submitted request. |
 
 
