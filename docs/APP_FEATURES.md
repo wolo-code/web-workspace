@@ -240,3 +240,10 @@ Scanner card and optional details: detect the inner Wolo code box and the whole 
 - Completed or superseded geolocation watches ignore queued results and errors. Timeout/unavailable errors do not revoke location permission; only permission denial does.
 - Switching away from Apple Maps hides its stage and cancels its follow frame; delayed MapKit loading cannot reveal an inactive layer.
 - Google POI clicks are used only on Google terrain/satellite. Other map sources resolve the clicked coordinate instead of a hidden Google place.
+
+
+## Multiple map places and route sharing
+
+Shift+Go retains the current info card while opening another. Info cards have no close button. Backspace or Delete removes the active card and its marker, or the focused Places row; typing in a nonempty search field or another editable field keeps normal editing behavior. Click a retained card to make it active before removing it.
+
+The Places icon shows a **Places** hover tooltip and opens the ordered list when at least two places exist. Each row has one drag handle for mouse/touch reordering; focus the handle and use Arrow Up/Down for keyboard reordering. Directions and **Share route** follow the current order. Sharing uses the native share sheet where available and copies the link otherwise. Links use `/?from=latitude,longitude&via=latitude,longitude&to=latitude,longitude` (URL-encoded, with repeated `via` parameters for additional stops). Opening a shared link restores the ordered map markers and fits them in view; select a marker or list row to open its info card. Invalid coordinates are rejected.

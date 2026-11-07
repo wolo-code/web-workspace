@@ -74,3 +74,10 @@ Scanner card and optional details: detect the inner Wolo code box and the whole 
 ## Map and location lifecycle
 
 Location Wolo Label View remains open across background service-worker updates. New page assets apply on the next navigation or manual refresh. Completed/superseded Location Accuracy Indicator sessions ignore queued geolocation callbacks. Entering Wolo Code Input View or another map source hides the Apple Maps stage, including when MapKit finishes loading later. Hidden Google POIs do not replace coordinate-selected results on non-Google maps.
+
+
+## Multiple map places and route sharing
+
+Shift+Go retains the current info card while opening another. Info cards have no close button. Backspace or Delete removes the active card and its marker, or the focused Places row; typing in a nonempty search field or another editable field keeps normal editing behavior. Click a retained card to make it active before removing it.
+
+The Places icon shows a **Places** hover tooltip and opens the ordered list when at least two places exist. Each row has one drag handle for mouse/touch reordering; focus the handle and use Arrow Up/Down for keyboard reordering. Directions and **Share route** follow the current order. Sharing uses the native share sheet where available and copies the link otherwise. Links use `/?from=latitude,longitude&via=latitude,longitude&to=latitude,longitude` (URL-encoded, with repeated `via` parameters for additional stops). Opening a shared link restores the ordered map markers and fits them in view; select a marker or list row to open its info card. Invalid coordinates are rejected.
