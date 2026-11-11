@@ -5,7 +5,6 @@
 - When a coherent piece of work is complete, **commit it immediately** in every affected nested repo (`app/project`, `site/project`, `site/project/root/Framework`, aggregator `D:\Wolo\Web`, and others only if they actually changed). Do not wait for the user to ask, and do not only suggest a message. First line is the summary; following lines explain why. Do not push unless asked. Skip `public/`, `interim/`, `.playwright-cli/`, and secrets.
 - Update the docs/APP_FEATURES doc when applicable
 - Do not edit files in `public/` and `interim/` for source changes; they are generated/rebuilt before deployment.
-- In the direct-link Address Preview and QR Label modals, use the same faint white tint (`rgb(255 255 255 / 18%)`) as the Close button for circular controls in their resting state.
 
 ## Repository structure
 
