@@ -1,5 +1,7 @@
 # App sections
 
+Direct Wolo Code, coordinate and route links skip the first-run Info notice and automatic guide. Open Info to find the privacy policy or select **show guide**.
+
 ## Wolo Code Input View
 
 Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
