@@ -123,7 +123,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Web app has a printable/shareable Wolo Code layout.
 - Copying a Wolo Code link writes only the URL as plain text, including the trailing slash for a jump link.
 - Includes title, segment, Wolo Code, editable address, and `www.wolo.codes`.
-- Supports QR preview.
+- Supports QR preview. The full label includes a “scan or enter at www.wolo.codes” footer.
 - Supports download.
 - Supports print.
 - Supports saving the current Wolo Code address from a top-left address-book icon in the label dialog.
