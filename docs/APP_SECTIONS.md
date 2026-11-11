@@ -10,6 +10,8 @@ The Map button in Wolo Code Input View uses a location pin. In Map View, the lef
 
 ## Map View: camera navigation
 
+Wolo map links accept `?zoom=17` and keep the requested zoom within the map’s supported range. Without a valid zoom, links open two levels below the active map source’s maximum. The dialog shown when opening a link has its Close button at the top right.
+
 The Terrain Map Canvas and alternate map sources keep manual pan and zoom in control: wheel, touch, drag, double-click, and camera-key input cancel automatic location focus, including its delayed final fit and chrome pan. New location selections, map-source changes, and entering Wolo Code Input View discard earlier camera callbacks. Bounds focus uses the full projected bounds and actual map dimensions with consistent padding, including across the dateline, so it does not zoom in too far before fitting back out. Focusing the current center works without a pan event, and camera limits stop animation cleanly.
 
 Map View filters small direction reversals within trackpad pinches reported as Ctrl+wheel while allowing a sustained reversal or a new pinch to change direction.
