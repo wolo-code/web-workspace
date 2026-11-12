@@ -127,7 +127,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Copied Wolo map links include the current `zoom`. Links without a valid zoom open two levels below the active map source’s maximum. The link-opening dialog has a Close button in the top-right corner.
 - Supports download.
 - Supports print.
-- Supports saving the current Wolo Code address from the bookmark button to the left of the Label heading, with Close on the same row to the right.
+- Supports saving the current Wolo Code address from the bookmark button to the left of the Label heading, with Close on the same row to the right. Both buttons have a tinted fill and outline on narrow screens in light mode.
 - Uses `html2canvas` and `jspdf` for export-oriented rendering.
 
 ### 10. External Navigation / Maps Redirect

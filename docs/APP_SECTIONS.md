@@ -67,7 +67,7 @@ The label and Info modal logo groups share a 12px right offset with the centered
 
 ## Label modal
 
-The bookmark button, centered Label heading, and Close button share one row above the label.
+The bookmark button, centered Label heading, and Close button share one row above the label. On narrow screens in light mode, both buttons have a tinted fill, visible outline, and dark teal icons against the white background.
 
 The full label uses dark text for the city and Wolo Code and displays “scan or enter at www.wolo.codes” in the footer. The top border, corner frame, and footer use #1F4E5F in edit mode and 80% black (#333333) in preview mode.
 
