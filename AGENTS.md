@@ -1,5 +1,7 @@
 # Agent Instructions
 
+- When replying about a UI change or question, explicitly name the affected section or modal using its exact user-facing name from the relevant `APP_SECTIONS.md`. Use that name naturally in progress updates and the final reply so the user can learn the terminology.
+
 - When modifying or adding application behavior, UI, or user-facing flows, update `APP_FEATURES.md` and `APP_SECTIONS.md` in the same change so the app documentation stays current.
 - Keep commits atomic: each commit should contain one coherent behavior or documentation change, and unrelated files should be committed separately.
 - When a coherent piece of work is complete, **commit it immediately** in every affected nested repo (`app/project`, `site/project`, `site/project/root/Framework`, aggregator `D:\Wolo\Web`, and others only if they actually changed). Do not wait for the user to ask, and do not only suggest a message. First line is the summary; following lines explain why. Do not push unless asked. Skip `public/`, `interim/`, `.playwright-cli/`, and secrets.
