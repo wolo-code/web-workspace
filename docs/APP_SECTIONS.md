@@ -67,7 +67,7 @@ The label and Info modal logo groups share a 12px right offset with the centered
 
 ## Label modal
 
-The full label uses dark text for the city and Wolo Code and displays “scan or enter at www.wolo.codes” in the footer.
+The full label uses dark text for the city and Wolo Code and displays “scan or enter at www.wolo.codes” in the footer. The top border, corner frame, and footer use #1F4E5F in edit mode and 80% black (#333333) in preview mode.
 
 The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.
 

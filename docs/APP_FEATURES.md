@@ -123,7 +123,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Web app has a printable/shareable Wolo Code layout.
 - Copying a Wolo Code link writes only the URL as plain text, including the trailing slash for a jump link.
 - Includes title, segment, Wolo Code, editable address, and `www.wolo.codes`.
-- Supports QR preview. The full label includes a “scan or enter at www.wolo.codes” footer.
+- Supports QR preview. The full label includes a “scan or enter at www.wolo.codes” footer. The label accent is #1F4E5F in edit mode and 80% black (#333333) in preview mode.
 - Copied Wolo map links include the current `zoom`. Links without a valid zoom open two levels below the active map source’s maximum. The link-opening dialog has a Close button in the top-right corner.
 - Supports download.
 - Supports print.
