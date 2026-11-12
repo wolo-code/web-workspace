@@ -8,7 +8,7 @@ Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
 
 ## View and map-source controls
 
-In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source, using Google’s full-color Maps icon for the Google street map.
+In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source. The Google street map icon uses the primary accent (#69B7CF).
 
 ## Map View: camera navigation
 
@@ -65,7 +65,7 @@ The Map View scanner and search artwork use the primary accent (#69B7CF). Both M
 
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
 
-The label and Info modal logo groups share a 12px right offset with the centered main-page logo. The desktop main-page logo keeps a 10px gap from the right screen edge.
+The label and Info modal logo groups share a 12px right offset with the centered main-page logo. On narrow screens, the Code wordmark sits at the base of Wolo in Map View and Wolo Code Input View. The desktop main-page logo keeps a 10px gap from the right screen edge.
 
 ## Label modal
 
