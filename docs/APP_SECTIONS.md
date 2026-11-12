@@ -65,7 +65,7 @@ The Map View scanner and search artwork use the primary accent (#69B7CF). Both M
 
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
 
-The label and Info modal logo groups share a 12px right offset with the centered main-page logo. On narrow screens, the Code wordmark sits at the base of Wolo in Map View and Wolo Code Input View. The desktop main-page logo keeps a 10px gap from the right screen edge.
+The label and Info modal logo groups share a 12px right offset with the centered main-page logo. In Map View and Wolo Code Input View, the Code wordmark matches the size and close placement beside Wolo in the Info modal. The desktop main-page logo keeps a 10px gap from the right screen edge.
 
 ## Label modal
 
