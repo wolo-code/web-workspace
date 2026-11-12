@@ -134,7 +134,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 - Direct Wolo Code links start in Map View with the Address Preview visible. Its slightly rounded panel uses larger type for the Wolo Code words and vertically centers the decoded address or 36 px loading spinner in the four-line address area. The Close button is centered 20 px below the panel. Trailing-slash links use its External Map Redirect mode, with the page-wide loader visible above the overlay. The external map opens three seconds after the code resolves.
 - Stop keeps the location open in Wolo.
-- On narrow screens, the Wolo logo appears above the Address Preview and External Map Redirect panel. In light mode, the Close button has a tinted fill and outline for contrast against the white background.
+- On narrow screens, Address Preview and External Map Redirect show the Wolo logo above the panel, with the Code wordmark aligned near its base, and the page footer below. In light mode, the Close button has a tinted fill and outline for contrast against the white background.
 - Profile settings remember the external map choice for this browser. Choices are Automatic, Google Maps, and Apple Maps.
 - Android wrapper forwards geo intents to `https://wolo.codes/?q=...`.
 - Decoded or selected coordinates can be handed off to a maps app.

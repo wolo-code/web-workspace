@@ -49,7 +49,7 @@ The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs an
 
 Long-pressing the external maps button in the Map View info window copies the Wolo Code jump link as plain text, including its trailing slash. Direct Wolo Code links open Map View with the **Address Preview** modal already visible. The Close button is centered 20 px below the modal. The decoded address is vertically centered within the four-line area between the down arrow and Go, and longer addresses scroll within that area. The trailing-slash variant is called **External Map Redirect**. It uses the same modal with a Stop button and the page-wide loader visible above the overlay. The External map control in profile settings chooses where these links and other external map actions open.
 
-On narrow screens, the Wolo logo is visible at the top above the Address Preview and External Map Redirect panel. In light mode, the Close button has a tinted fill, visible outline, and dark teal icon against the white background.
+On narrow screens, Address Preview and External Map Redirect keep the Wolo logo at the top and the page footer at the bottom. The Code wordmark sits near the base of the Wolo wordmark, as in the Info modal. In light mode, the Close button has a tinted fill, visible outline, and dark teal icon against the white background.
 
 ## Bookmarks modal
 
