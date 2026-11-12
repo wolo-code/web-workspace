@@ -47,7 +47,7 @@ The full Info view has City and Region tabs for the two plain-text formats. The 
 
 The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs and the Overlay Layer.
 
-Long-pressing the external maps button in the Map View info window copies the Wolo Code jump link as plain text, including its trailing slash. Opening that link shows the address preview with a Stop button and the page-wide loader visible above the overlay. The External map control in profile settings chooses where these links and other external map actions open.
+Long-pressing the external maps button in the Map View info window copies the Wolo Code jump link as plain text, including its trailing slash. Direct Wolo Code links open Map View with the **Address Preview** modal already visible. The trailing-slash variant is called **External Map Redirect**. It uses the same modal with a Stop button and the page-wide loader visible above the overlay. The External map control in profile settings chooses where these links and other external map actions open.
 
 ## Bookmarks modal
 

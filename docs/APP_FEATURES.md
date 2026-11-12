@@ -132,7 +132,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 10. External Navigation / Maps Redirect
 
-- Trailing-slash links show the Wolo Code and address preview with the page-wide loader visible above the overlay. The external map opens three seconds after the code resolves.
+- Direct Wolo Code links start in Map View with the Address Preview visible. Trailing-slash links use its External Map Redirect mode, with the page-wide loader visible above the overlay. The external map opens three seconds after the code resolves.
 - Stop keeps the location open in Wolo.
 - Profile settings remember the external map choice for this browser. Choices are Automatic, Google Maps, and Apple Maps.
 - Android wrapper forwards geo intents to `https://wolo.codes/?q=...`.
