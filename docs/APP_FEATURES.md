@@ -225,7 +225,7 @@ The Map View scanner and search artwork use the primary accent (#69B7CF). Both M
 
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
 
-The label and Info modal logo groups share a 12px right offset with the centered main-page logo. In Map View and Wolo Code Input View, the Code wordmark matches the size and close placement beside Wolo in the Info modal. The desktop main-page logo keeps a 10px gap from the right screen edge.
+The label and Info modal logo groups share a 12px right offset with the centered main-page logo. In Map View and Wolo Code Input View, the Code wordmark matches the size in the Info modal. Code sits beside Wolo on narrow screens and below it on desktop. The desktop main-page logo keeps a 10px gap from the right screen edge.
 
 In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The icon sits at the bottom-right of the address line 1 field. Its gray lines stay the same in both states; only the filled primary-accent (#69B7CF) triangle changes direction, pointing down to split and up to merge.
 
