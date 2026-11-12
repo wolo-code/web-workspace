@@ -8,7 +8,7 @@ Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
 
 ## View and map-source controls
 
-The Map button in Wolo Code Input View uses a location pin. In Map View, the left button shows the Wolo Code mark and the right button shows the active map source icon.
+In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source, using Google’s full-color Maps icon for the Google street map.
 
 ## Map View: camera navigation
 
