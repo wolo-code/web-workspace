@@ -211,7 +211,7 @@ Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at
 
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Go and Save stay disabled until all three words are complete and valid. Recognized or suggested cities display a rounded outlined tag, which clears when edited to an unknown city.
 
-Scanner capture control is 20% larger. Sparse-text OCR reads the visible guide after detecting the inner code box and outer card boundary. Three stable box-contained matches trigger capture without imposing a text aspect ratio.
+Scanner capture control is 20% larger. Live OCR reads inside the detected landscape code frame. One high-confidence read or two matching uncertain reads open review.
 
 Scanner detection adds 10% centered padding around recognized text and fills review fields immediately on live capture. Zoom and pan automatically rerun framed OCR after 350ms of inactivity, ignoring outdated results. Live zoom requests fresh detection.
 
@@ -259,4 +259,4 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 ## Wolo Code Scan Dialog
 
-The Wolo Code Scan Dialog reads the live camera on device. It automatically opens review after three consecutive reads agree on the city and three words, with at least 0.55 overlap between consecutive printed code boxes. A tap on the Shutter Button takes a fresh frame even during live OCR. Hold the Shutter Button for 500 ms to show square-cornered outlines of detected borders and recognized regions. Release to review the detected code and its frame. If no code was found, live scanning continues. In review, check or edit the city and words and choose Go to open the address. The bundled OCR worker can reread the interior of detected code boxes if full-image OCR misses the label.
+The Wolo Code Scan Dialog reads the live camera on device. Live OCR reads the detected code frame first and rotates sideways or upside-down crops before reading. Review opens after one high-confidence read, or after two consecutive matching reads of an uncertain code in a stable frame. A tap on the Shutter Button takes a fresh frame even during live OCR. Hold the Shutter Button for 500 ms to show the best candidate frame, then the recognized regions, with square corners. Release to open review immediately from the existing detection. Optional label details can fill in while review is open. If no code was found, live scanning continues. In review, check or edit the city and words and choose Go to open the address. The bundled OCR worker can reread the interior of detected code boxes if full-image OCR misses the label.
