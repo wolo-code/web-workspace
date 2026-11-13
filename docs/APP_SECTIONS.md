@@ -116,4 +116,6 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 ## Wolo Code Scan Dialog
 
+OCR skips the label logo and footer, including common misreads, so missing Title, Segment, Address line 1, and Address line 2 fields stay blank.
+
 The Wolo Code Scan Dialog reads the live camera on device. Live OCR reads landscape code frames in the camera orientation. Rotation is available when the Shutter Button takes a fresh still. Review opens after one high-confidence read, or after two consecutive matching reads of an uncertain code in a stable frame. A tap on the Shutter Button takes a fresh frame even during live OCR. Hold the Shutter Button for 500 ms to show the best landscape code frame, then the recognized regions, with square corners. The whole-card outline appears for landscape cards. Release to open review immediately from the existing detection. Optional label details can fill in while review is open. If no code was found, live scanning continues. In review, check or edit the city and words and choose Go to open the address.
