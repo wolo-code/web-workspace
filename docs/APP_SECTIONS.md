@@ -10,6 +10,12 @@ Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
 
 In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source. The Google street map icon uses the primary accent (#69B7CF).
 
+Tap **Switch map** to cycle forward through enabled map modes. Hold **Switch map** for half a second to cycle backward.
+
+## Info
+
+Tap **Info** to open the Info modal. Hold **Info** for half a second to show the icon guide directly in Wolo Code Input View or Map View.
+
 ## Map View: camera navigation
 
 Wolo map links accept `?zoom=17` and keep the requested zoom within the map’s supported range. Without a valid zoom, links open two levels below the active map source’s maximum. The dialog shown when opening a link has its Close button at the top right.
@@ -24,7 +30,7 @@ Hold an existing marker for half a second. Keep holding and drag to place the dr
 
 ## Map View: OpenStreetMap coverage
 
-When location navigation or auto zoom reaches unavailable OSM tiles, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step; events from older zoom levels do not affect the current view.
+OpenStreetMap caps manual and automatic zoom at level 19. Switching from a deeper zoom to OpenStreetMap sets the camera to level 19 without a notification. When tiles fail at a supported zoom level, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step. Events from older zoom levels do not affect the current view.
 
 ## Country and regional choices in city selectors
 
