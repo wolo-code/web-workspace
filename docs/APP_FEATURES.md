@@ -126,7 +126,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Includes title, segment, Wolo Code, editable address, and `www.wolo.codes`.
 - In the Label modal, the three Wolo Code words use dark teal (#1F4E5F) in edit mode and 80% black (#333333) in preview mode. The top border, corner frame, and “scan or enter at www.wolo.codes” footer use the primary accent (#69B7CF) in both modes.
 - Copied Wolo map links include the current `zoom`. Links without a valid zoom open two levels below the active map source’s maximum. The link-opening dialog has a Close button in the top-right corner.
-- Supports download.
+- The Label modal’s **Download** button saves a PNG with the complete Wolo Code logo at its preview size.
 - Supports print.
 - Supports saving the current Wolo Code address from the bookmark button to the left of the Label heading, with Close on the same row to the right. Both buttons have a tinted fill and outline on narrow screens in light mode.
 - Uses `html2canvas` and `jspdf` for export-oriented rendering.
