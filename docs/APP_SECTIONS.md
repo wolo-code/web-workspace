@@ -77,6 +77,8 @@ The profile artwork (default icon and signed-in avatar) is 42px with a padded ta
 
 The label and Info modal logo groups share a 12px right offset with the centered main-page logo. In Map View and Wolo Code Input View, the Code wordmark matches the size in the Info modal. Code sits beside Wolo on narrow screens and below it on desktop. The desktop main-page logo keeps a 10px gap from the right screen edge.
 
+Tap the **Wolo logo** to open wolo.codes. Press and hold it for half a second to clear the app cache and reload. The Wolo logo suppresses the iOS Safari link preview for this gesture.
+
 ## Label modal
 
 The bookmark button, centered Label heading, and Close button share one row above the label. On narrow screens in light mode, both buttons have a tinted fill, visible outline, and dark teal icons against the white background.

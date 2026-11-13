@@ -157,6 +157,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Shows the first-run cookie/privacy notice on the app home page. Direct Wolo Code, coordinate and route links open their destination without the intro or automatic icon guide. The Info dialog still provides the privacy policy and manual guide.
 - Shows unsupported browser warning.
 - Shows a blocking unexpected error dialog titled `Oops an error occured!` with a warning icon, Clear cache & reload, and a crawl-proof support email on the next line after “You may contact our support team.” There is no close button. Press and hold the title to show the crash message and Continue. Clicking the dimmed overlay does not close it. Other overlay dialogs close when the overlay is clicked.
+- In Map View and Wolo Code Input View, press and hold the Wolo logo to clear the app cache and reload. The logo disables the iOS Safari touch callout so the link preview does not intercept the gesture.
 - Reports exceptions to Sentry. Hosting deploy and native bake refuse HTML whose `integrity` hashes do not match the current CDN bytes.
 - Uses Firebase Analytics, Firebase Performance, and Cloudflare analytics. Production Hosting deploys purge the `wolo.codes` Cloudflare zone; development deploys purge `https://dev.wolo.codes` so stale HTML cannot linger on covers and JSON.
 
