@@ -1,6 +1,6 @@
 # Agent Instructions
 
-- When replying about a UI change or question, explicitly name the affected section or modal using its exact user-facing name from the relevant `APP_SECTIONS.md`. Use that name naturally in progress updates and the final reply so the user can learn the terminology.
+- For every UI change or question, look up each affected section, control, or modal in the relevant `APP_SECTIONS.md`. Say its exact documented name in progress updates and the final reply. If a UI element has no documented name, add it to `APP_SECTIONS.md` and use that name when reporting the work.
 
 - When modifying or adding application behavior, UI, or user-facing flows, update `APP_FEATURES.md` and `APP_SECTIONS.md` in the same change so the app documentation stays current.
 - Keep commits atomic: each commit should contain one coherent behavior or documentation change, and unrelated files should be committed separately.
