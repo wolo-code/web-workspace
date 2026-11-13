@@ -18,6 +18,10 @@ The Terrain Map Canvas and alternate map sources keep manual pan and zoom in con
 
 Map View filters small direction reversals within trackpad pinches reported as Ctrl+wheel while allowing a sustained reversal or a new pinch to change direction.
 
+## Map View: Adjust pin
+
+Hold an existing marker for half a second or choose **Adjust pin** on its info card. A movable crosshair starts at the marker's exact location and the marker and info cards are temporarily hidden. Drag the crosshair or use the directional buttons or arrow keys to nudge it one screen pixel at a time. Panning and zooming keep the crosshair anchored to the draft location. **Apply** moves that marker in place and refreshes its location details. **Cancel** or Escape discards the draft. Opening and applying the adjustment keep the current map framing.
+
 ## Map View: OpenStreetMap coverage
 
 When location navigation or auto zoom reaches unavailable OSM tiles, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step; events from older zoom levels do not affect the current view.
