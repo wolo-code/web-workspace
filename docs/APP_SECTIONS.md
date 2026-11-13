@@ -20,7 +20,7 @@ Map View filters small direction reversals within trackpad pinches reported as C
 
 ## Map View: Adjust pin
 
-Hold an existing marker for half a second or choose **Adjust pin** on its info card. A movable crosshair starts at the marker's exact location and the marker and info cards are temporarily hidden. Drag the crosshair or use the directional buttons or arrow keys to nudge it one screen pixel at a time. Panning and zooming keep the crosshair anchored to the draft location. **Apply** moves that marker in place and refreshes its location details. **Cancel** or Escape discards the draft. Opening and applying the adjustment keep the current map framing.
+Hold an existing marker for half a second or choose **Adjust pin** on its info card. A movable crosshair starts at the marker's exact location and the marker and info cards are temporarily hidden. Drag the crosshair or use the directional buttons or arrow keys to nudge it one screen pixel at a time. Hold a directional button to keep nudging. Panning and zooming keep the crosshair anchored to the draft location. The checkmark on the right applies the move and refreshes the location details. The × on the left or Escape discards the draft. Opening and applying the adjustment keep the current map framing.
 
 ## Map View: OpenStreetMap coverage
 
