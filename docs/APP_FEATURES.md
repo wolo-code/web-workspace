@@ -50,7 +50,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 ### 2. Encode - Map Location to Wolo Code
 
 - User can switch to map mode and choose a location on the map.
-- In Map View, hold a marker or choose **Adjust pin** on its info card to fine-tune the location with a draggable crosshair and one-pixel directional nudges. Holding a directional button repeats the nudge. The checkmark applies the move and refreshes the marker's Wolo Code, address, and route links. The × or Escape discards the draft. Saved bookmarks keep their stored coordinates.
+- In Map View, hold a marker or choose **Adjust pin** on its info card to fine-tune the location with a draggable crosshair and one-pixel directional nudges. The D-pad repeats one-pixel nudges while a directional button is held. The checkmark applies the move and refreshes the marker's Wolo Code, address, and route links. The × or Escape discards the draft. Saved bookmarks keep their stored coordinates.
 - User can use current GPS location to encode the current position.
 - User can search for a place and encode that selected location. In Map View the search field stays focused so typing can start without clicking it first, except during the icon guide, when the caret is hidden.
 - Reverse geocoding extracts the city-level Google Place ID.
