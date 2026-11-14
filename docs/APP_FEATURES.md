@@ -210,7 +210,7 @@ Scanner city choices open in a centered modal popup when the city icon is clicke
 Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at normal zoom. Changed zoom displays the reset glyph in the same slot, retaining the existing reset target, percentage position, and behavior.
 
 
-Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Go and Save stay disabled until all three words are complete and valid. Recognized or suggested cities display a rounded outlined tag, which clears when edited to an unknown city.
+Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Go and Save stay disabled until all three words are complete and valid. City uses the same underline as the three word fields.
 
 Scanner capture control is 20% larger. Live OCR reads inside the detected landscape code frame. One high-confidence read or two matching uncertain reads open review.
 
@@ -262,6 +262,6 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 The scanner filters label branding and blank OCR rows from optional details during both initial OCR and follow-up reads. The first readable address paragraph fills Address line 1.
 
-The OCR worker loads while the camera starts. With three exact, high-confidence words, Label Edit View can open with a blank city. If a second read is needed, the Wolo Code Scan Dialog checks sooner and starts with the previously read code box. The shutter uses a short Web Audio cue that stops when the page is hidden.
+The OCR worker loads while the camera starts. With three exact, high-confidence words, Label Edit View can open with a blank city. If a second read is needed, the Wolo Code Scan Dialog checks sooner and starts with the previously read code box. The Shutter Button captures silently. The top-bar loader stays visible while the Input Icon Guide is shown.
 
 The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery and the Shutter Button read the detected code box first and can retry with sparse-text OCR. A shutter tap takes a fresh still even during live OCR and can read quarter-turned labels. Label Edit View shows the city and words while optional details finish reading. Review the fields and choose Go to open the address.
