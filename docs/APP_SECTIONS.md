@@ -126,7 +126,7 @@ In **Label Edit View**, empty Title, Segment, Address line 1, and Address line 2
 
 OCR skips the label logo, footer and blank rows. The first readable address paragraph fills Address line 1.
 
-In the Wolo Code Scan Dialog, the OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. Three exact, high-confidence words can open Label Edit View when the city is unreadable. Live confirmation rechecks the previous card crop when available and reads the smaller code box inside it. City uses the same underline as the three word fields. Hiding the page releases the camera. A live scan resumes in a fresh Viewfinder video element when the page is visible again.
+In the Wolo Code Scan Dialog, the OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. Three exact, high-confidence words can open Label Edit View when the city is unreadable. Live confirmation rechecks the previous card crop when available and reads the smaller code box inside it. City uses the same underline as the three word fields. Hiding the page releases the camera. When the page is visible again, a live scan resumes with a fresh camera stream. Rescan returns from Label Edit View to an edge-to-edge live Viewfinder.
 
 The Top Bar Loader stays visible through the Input Icon Guide’s full closing fade.
 
