@@ -193,7 +193,7 @@ Core backend resources already used or planned by the iOS app:
 - Opening the site menu from a long article slides the article out first (full height). After that slide, the frame settles so the footer sits at the bottom of the shorter menu page. The footer then fades and moves in from below. Height is flex-column, not a measured canvas/min-height.
 - Footer includes Play Store and App Store badges (App Store is coming soon).
 
-Status and privacy messages appear above the controls. Gallery and Typing share the live control row. During photo review, the plain Rescan arrow sits level with Close. The Bottom Controls Panel keeps Save on the left, Address Details in the center, and Go on the right while the fields scroll. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
+Status and privacy messages appear above the controls. Gallery and Typing share the live control row. Rescan sits at the top left of Label Edit View for scanned and typed labels. The Bottom Controls Panel keeps Save on the left, Address Details in the center, and Go on the right while the fields scroll. Go's background and arrow follow the active theme. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
 
 Scanner review: A List icon button to the left of the editable city opens recognized, recent, IP and selected city choices; selecting a city updates the scanner review only. City and Word labels use a faded accent, recognized values use larger type, and Address details and bookmark Save sit below the label fields.
 
@@ -201,7 +201,7 @@ The scanner city chooser icon sits inside the left edge of the city input.
 
 Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
 
-Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus. The chequered background fills the Viewfinder while the camera starts and behind the image. Both share the same rounded outer edge. In portrait and landscape, the live video is sized to fill the Viewfinder using the camera frame dimensions.
+Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus. The Viewfinder uses a solid background during live scanning and a chequered background behind the frozen label preview. Both backgrounds follow the active theme. Live video fills the rounded Viewfinder using the camera frame dimensions.
 
 When the first scan misses, the scanner can fit four edges around a card or code frame and flatten the resulting quadrilateral before retrying OCR. It checks the corrected image for a valid code box and maps the recognized regions back to the original preview. If the whole card is corrected, the optional details read uses the corrected card too. Whole-frame tilt correction remains available when the border-based read fails.
 
