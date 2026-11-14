@@ -260,6 +260,8 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 ## Wolo Code Scan Dialog
 
-The scanner filters label branding from optional details during both initial OCR and follow-up reads. Missing headings and address lines stay blank.
+The scanner filters label branding and blank OCR rows from optional details during both initial OCR and follow-up reads. The first readable address paragraph fills Address line 1.
+
+The OCR worker loads while the camera starts. With three exact, high-confidence words, Label Edit View can open with a blank city. If a second read is needed, the Wolo Code Scan Dialog checks sooner and starts with the previously read code box. The shutter uses a short Web Audio cue that stops when the page is hidden.
 
 The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery and the Shutter Button read the detected code box first and can retry with sparse-text OCR. A shutter tap takes a fresh still even during live OCR and can read quarter-turned labels. Label Edit View shows the city and words while optional details finish reading. Review the fields and choose Go to open the address.
