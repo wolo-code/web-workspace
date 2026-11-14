@@ -201,7 +201,9 @@ The scanner city chooser icon sits inside the left edge of the city input.
 
 Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
 
-Scanner Zoom Controls stack +, Reset Zoom and − in a vertical pill. The middle button shows a magnifying glass at 100% and a reset arrow with the current percentage beside it when zoomed in.
+Scanner Zoom Controls stack +, Reset Zoom and − in a vertical pill. The + and − buttons match the pill’s rounded ends. The middle button shows a magnifying glass at 100% and a reset arrow with the current percentage beside it when zoomed in.
+
+When the first scan misses, the scanner can fit four edges around a card or code frame and flatten the resulting quadrilateral before retrying OCR. It checks the corrected image for a valid code box and maps the recognized regions back to the original preview. If the whole card is corrected, the optional details read uses the corrected card too. Whole-frame tilt correction remains available when the border-based read fails.
 
 Scanner City label sits just outside the input's left edge with an 8px gap, preserving the city field and embedded chooser positions.
 
