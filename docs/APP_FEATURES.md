@@ -197,17 +197,17 @@ Scanner controls: Status and privacy messages appear above the controls. Capture
 
 Scanner review: A List icon button to the left of the editable city opens recognized, recent, IP and selected city choices; selecting a city updates the scanner review only. City and Word labels use a faded accent, recognized values use larger type, and Go sits beside the zoom controls; Address details, bookmark Save and the Cancel icon share the bottom action row. Zoom Reset uses an accessible reset-arrow icon.
 
-Scanner field controls: The city chooser icon sits inside the left edge of the city input. Zoom percentage and the small reset icon above it share one reset button. The icon appears only away from 100% zoom; its space stays reserved to prevent layout shifts.
+The scanner city chooser icon sits inside the left edge of the city input.
 
-Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Zoom percentage floats above the pill and is visible only away from 100%, alongside the conditional reset icon; the combined reset target remains stable. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
+Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
 
-Scanner zoom reset: The reset glyph is centered in a fixed-width middle slot between minus and plus, with no individual background circle, including hover and pressed states. The shared zoom pill retains its background.
+Scanner Zoom Controls stack +, Reset Zoom and − vertically in a V-shaped taper. The middle button shows a magnifying glass at 100% and a reset arrow with the current percentage beside it when zoomed in.
 
 Scanner City label sits just outside the input's left edge with an 8px gap, preserving the city field and embedded chooser positions.
 
 Scanner city choices open in a centered modal popup when the city icon is clicked, above the scanner with a dimmed backdrop. Selection updates the review city and dismisses the popup; Escape or backdrop click also dismisses it.
 
-Scanner zoom pill shows a flat gray magnifying-glass glyph in its middle slot at normal zoom. Changed zoom displays the reset glyph in the same slot, retaining the existing reset target, percentage position, and behavior.
+Holding the Scan Button for 500 ms opens the Wolo Code Scan Dialog in debug mode. The Scan Debug Log shows recent camera, region detection, OCR, and review steps over the viewfinder. It stays visible during review and rescan and clears when the dialog closes.
 
 
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Go and Save stay disabled until all three words are complete and valid. City uses the same underline as the three word fields.
