@@ -116,9 +116,11 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 ## Wolo Code Scan Dialog
 
-Tap the **Scan Button** in Map View or Wolo Code Input View to open the scanner. Hold it for 500 ms to start in debug mode. The **Scan Debug Log** overlays the viewfinder and shows the five most recent processing steps through capture, review, and rescan. Closing the dialog clears the log and exits debug mode.
+Tap the **Scan Button** in Map View or Wolo Code Input View to open the scanner. Hold it for 500 ms to start in debug mode. The **Scan Debug Log** overlays the viewfinder and scrolls to show earlier processing steps. It pauses in Label Edit View, resumes on Rescan, and clears when the dialog closes.
 
-**Zoom Controls** taper from a wider top to a narrower base. Zoom In (+) is at the top, Reset Zoom is in the middle, and Zoom Out (−) is at the bottom. The current percentage appears to the right of Reset Zoom when the image is zoomed in.
+**Zoom Controls** sit in a vertical pill. Zoom In (+) is at the top, Reset Zoom is in the middle, and Zoom Out (−) is at the bottom. The current percentage appears to the right of Reset Zoom when the image is zoomed in.
+
+In **Label Edit View**, empty Title, Segment, Address line 1, and Address line 2 fields shimmer while their OCR pass runs. Recognized text fills in when the read finishes, and edits made during the read are preserved.
 
 OCR skips the label logo, footer and blank rows. The first readable address paragraph fills Address line 1.
 

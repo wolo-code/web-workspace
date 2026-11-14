@@ -201,13 +201,15 @@ The scanner city chooser icon sits inside the left edge of the city input.
 
 Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
 
-Scanner Zoom Controls stack +, Reset Zoom and − vertically in a V-shaped taper. The middle button shows a magnifying glass at 100% and a reset arrow with the current percentage beside it when zoomed in.
+Scanner Zoom Controls stack +, Reset Zoom and − in a vertical pill. The middle button shows a magnifying glass at 100% and a reset arrow with the current percentage beside it when zoomed in.
 
 Scanner City label sits just outside the input's left edge with an 8px gap, preserving the city field and embedded chooser positions.
 
 Scanner city choices open in a centered modal popup when the city icon is clicked, above the scanner with a dimmed backdrop. Selection updates the review city and dismisses the popup; Escape or backdrop click also dismisses it.
 
-Holding the Scan Button for 500 ms opens the Wolo Code Scan Dialog in debug mode. The Scan Debug Log shows recent camera, region detection, OCR, and review steps over the viewfinder. It stays visible during review and rescan and clears when the dialog closes.
+Holding the Scan Button for 500 ms opens the Wolo Code Scan Dialog in debug mode. The scrollable Scan Debug Log follows new entries while at the bottom and holds its position while reading earlier steps. It pauses in Label Edit View, resumes on Rescan, and clears when the dialog closes.
+
+In Label Edit View, empty optional details shimmer while OCR reads them and fill with recognized text once the read finishes. Fields stay editable, and OCR preserves user edits. Reduced-motion settings show a static loading tint.
 
 
 Scanner review validation: All three words must match the Wolo word list, ignoring case and surrounding spaces. Empty and possible word prefixes stay neutral gray. A nonempty entry with no matching word prefix turns red and shakes; a three-second popup names the wrong word when it first becomes impossible. There is no persistent inline error message. Go and Save stay disabled until all three words are complete and valid. City uses the same underline as the three word fields.
