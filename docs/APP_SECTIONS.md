@@ -118,7 +118,7 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 Tap the **Scan Button** in Map View or Wolo Code Input View to open the scanner. Hold it for 500 ms to start in debug mode. The **Scan Debug Log** overlays the viewfinder and shows elapsed times for camera startup, detection, OCR and each processed frame. It pauses in Label Edit View, resumes on Rescan, and clears when the dialog closes.
 
-After capture, Rescan sits in the top left and Go sits in the bottom right of the Wolo Code Scan Dialog. Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus.
+After capture, Rescan is a plain arrow aligned with Close. The Bottom Controls Panel keeps Address Details, Save, and Go visible while the fields scroll in Label Edit View. Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus.
 
 When a read fails, the Wolo Code Scan Dialog looks for four border edges around the Card Region or Wolo Code Region and tries perspective correction before retrying with a whole-frame rotation. The Scan Debug Log identifies the border used for correction.
 
@@ -128,6 +128,6 @@ OCR skips the label logo, footer and blank rows. The first readable address para
 
 In the Wolo Code Scan Dialog, the OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. Three exact, high-confidence words can open Label Edit View when the city is unreadable. Live confirmation rechecks the previous card crop when available and reads the smaller code box inside it. City uses the same underline as the three word fields. Hiding the page releases the camera. A live scan resumes when the page is visible again.
 
-The Input Icon Guide keeps the top-bar loader visible until the guide closes.
+The Top Bar Loader stays visible through the Input Icon Guide’s full closing fade.
 
 The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery reads the detected code box first and can retry with sparse-text OCR. Label Edit View shows the city and words while optional details finish reading. A successful capture shows the message "verify the wolo code below". Review the fields and choose Go to open the address.

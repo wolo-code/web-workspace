@@ -193,7 +193,7 @@ Core backend resources already used or planned by the iOS app:
 - Opening the site menu from a long article slides the article out first (full height). After that slide, the frame settles so the footer sits at the bottom of the shorter menu page. The footer then fades and moves in from below. Height is flex-column, not a measured canvas/min-height.
 - Footer includes Play Store and App Store badges (App Store is coming soon).
 
-Scanner controls: Status and privacy messages appear above the controls. Gallery and Typing share the live control row. Photo review places Rescan in the top left and Go in the bottom right of the Wolo Code Scan Dialog. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
+Status and privacy messages appear above the controls. Gallery and Typing share the live control row. During photo review, the plain Rescan arrow sits level with Close. The Bottom Controls Panel keeps Address Details, Save, and Go visible while the fields scroll. The camera artwork fills more of its circular button, and Bookmarks uses the matching dark-mode disc background.
 
 Scanner review: A List icon button to the left of the editable city opens recognized, recent, IP and selected city choices; selecting a city updates the scanner review only. City and Word labels use a faded accent, recognized values use larger type, and Address details and bookmark Save sit below the label fields.
 
@@ -201,7 +201,7 @@ The scanner city chooser icon sits inside the left edge of the city input.
 
 Scanner compact controls: City input is centered at 75% width, with an anchored city-choice popup that dismisses on selection, outside click, or Escape. Wolo Code Input View orders city-source controls as Previous city, IP globe, then GPS.
 
-Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus. The viewfinder uses a chequered background around the image.
+Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus. The chequered background fills the Viewfinder while the camera starts and behind the image. Both share the same rounded outer edge.
 
 When the first scan misses, the scanner can fit four edges around a card or code frame and flatten the resulting quadrilateral before retrying OCR. It checks the corrected image for a valid code box and maps the recognized regions back to the original preview. If the whole card is corrected, the optional details read uses the corrected card too. Whole-frame tilt correction remains available when the border-based read fails.
 
@@ -263,6 +263,6 @@ City-list, Go, Places, external-link/Directions, route-share, and address icons 
 
 The scanner filters label branding and blank OCR rows from optional details during both initial OCR and follow-up reads. The first readable address paragraph fills Address line 1.
 
-The OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. With three exact, high-confidence words, Label Edit View can open with a blank city. If a second read is needed, the Wolo Code Scan Dialog checks sooner and starts with the previously read code box. The top-bar loader stays visible while the Input Icon Guide is shown.
+The OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. With three exact, high-confidence words, Label Edit View can open with a blank city. If a second read is needed, the Wolo Code Scan Dialog checks sooner and starts with the previously read code box. The Top Bar Loader stays visible through the Input Icon Guide’s full closing fade.
 
 The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery reads the detected code box first and can retry with sparse-text OCR. Label Edit View shows the city and words while optional details finish reading. A successful capture shows the message "verify the wolo code below". Review the fields and choose Go to open the address.
