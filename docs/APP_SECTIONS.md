@@ -146,4 +146,4 @@ The **Launch Illustration** and **Wolo Code Examples** appear in the hero on `/p
 
 ## Technical Paper
 
-The **Equations** and **Diagrams** on `/paper` follow the LaTeX paper. In-text citations jump to **References** and highlight the matching entry. **Download PDF** opens the IEEE layout with **A. Process** and its diagram at the start of page two.
+The **Equations** and **Diagrams** on `/paper` follow the LaTeX paper. **Relative position** distinguishes capital theta from lowercase theta and uses an upright delta. Equations can scroll horizontally when needed. In dark mode, diagrams use light labels and strokes on dark cards. In-text citations jump to **References** and highlight the matching entry. **Download PDF** opens the IEEE layout with **A. Process** and its diagram at the start of page two.
