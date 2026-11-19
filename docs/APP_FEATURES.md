@@ -270,5 +270,5 @@ The Wolo Code Scan Dialog reads landscape labels from native camera pixels and c
 
 ## GIS Integration Guide (marketing site)
 
-- `/gis_integration` presents an SDK-first evaluation path for GIS and location platform teams. It keeps geometry and spatial analysis in the customer's GIS, explains coordinate/reference and ordered-word-list considerations, and provides an evaluation checklist and pilot contact.
+- `/gis_integration` presents an SDK-first evaluation path for GIS and location platform teams. It keeps geometry and spatial analysis in the customer's GIS, explains coordinate/reference and ordered-word-list considerations, and provides an evaluation checklist, a requirements email, and a meeting scheduler linked from the page and PDF.
 - The page links to the Wolo web app for a coordinate demonstration and to `/gis-integration-guide.pdf` for a printable client brief. Examples are conceptual; SDK targets and signatures are not presented as released contracts, and a hosted API is not required by the guide.
