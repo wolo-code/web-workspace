@@ -277,3 +277,5 @@ The Wolo Code Scan Dialog reads landscape labels from native camera pixels and c
 - The page links to the Wolo web app for a coordinate demonstration and to `/gis-integration-guide.pdf` for a printable client brief. Examples are conceptual; SDK targets and signatures are not presented as released contracts, and a hosted API is not required by the guide.
 
 The **Technical Paper** metadata row displays **IEEE Conference Paper Format | doc v1.2.0 | Download PDF** on one line, with **| doc v1.2.0 |** anchored exactly at the horizontal center using equal-width side columns. The paper footer places the version on the right; **Updated** remains at the bottom in the **Site Footer**.
+
+The **Technical Paper** **Download PDF** link places its download icon after the text.

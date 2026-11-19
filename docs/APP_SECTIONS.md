@@ -149,3 +149,5 @@ The **Launch Illustration** and **Wolo Code Examples** appear in the hero on `/p
 The **Equations** and **Diagrams** on `/paper` follow the LaTeX paper. **Relative position** distinguishes capital theta from lowercase theta and uses an upright delta. Equations can scroll horizontally when needed. In dark mode, diagrams use light labels and strokes on dark cards. In-text citations jump to **References** and highlight the matching entry. **Download PDF** opens the IEEE layout with **A. Process** and its diagram at the start of page two.
 
 The **Technical Paper** metadata row displays **IEEE Conference Paper Format | doc v1.2.0 | Download PDF** on one line, with **| doc v1.2.0 |** anchored exactly at the horizontal center using equal-width side columns. The paper footer places the version on the right; **Updated** remains at the bottom in the **Site Footer**.
+
+The **Technical Paper** **Download PDF** link places its download icon after the text.
