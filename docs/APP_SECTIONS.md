@@ -155,3 +155,5 @@ The **Technical Paper** **Download PDF** link places its download icon after the
 The **Technical Paper** **Diagrams** and **Download PDF** show the full-height double-headed dimension arrow for Θ and D in Grid G.
 
 The **GIS Integration Guide (marketing page)** explains grid rounding: about 1 m per axis and about 1.4 m maximum horizontal displacement for a roughly 2 m grid, in addition to source measurement error.
+
+The **GIS Integration Guide (marketing page)** See also links use **Wolo Code** for the technical paper and word list.
