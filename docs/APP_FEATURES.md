@@ -279,3 +279,5 @@ The Wolo Code Scan Dialog reads landscape labels from native camera pixels and c
 The **Technical Paper** metadata row displays **IEEE Conference Paper Format | doc v1.2.0 | Download PDF** on one line, with **| doc v1.2.0 |** anchored exactly at the horizontal center using equal-width side columns. The paper footer places the version on the right; **Updated** remains at the bottom in the **Site Footer**.
 
 The **Technical Paper** **Download PDF** link places its download icon after the text.
+
+The **Technical Paper** **Diagrams** and **Download PDF** show the full-height double-headed dimension arrow for Θ and D in Grid G.
