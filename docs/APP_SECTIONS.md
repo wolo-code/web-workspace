@@ -134,4 +134,8 @@ The Wolo Code Scan Dialog reads landscape labels from native camera pixels and c
 
 ## GIS Integration Guide (marketing page)
 
-The `/gis_integration` page is linked from the site menu as **GIS integration**. **Schedule a meeting** opens the Google Calendar appointment page. **Download the PDF** opens `/gis-integration-guide.pdf`, which also links to the appointment page. **Discuss your integration** lists the details to share by email. The site footer aligns **Updated** with the right edge of the guide.
+The `/gis_integration` page is linked from the site menu as **GIS integration**. **Schedule a meeting** opens the Google Calendar appointment page. **Download the PDF** opens `/gis-integration-guide.pdf`, which also links to the appointment page. **Discuss your integration** lists the details to share by email. The appointment scheduler also has a short URL at `/meet`.
+
+## Site Footer
+
+**Updated** is right-aligned in the shared footer across marketing pages.
