@@ -139,3 +139,11 @@ The `/gis_integration` page is linked from the site menu as **GIS integration**.
 ## Site Footer
 
 **Updated** is right-aligned in the shared footer across marketing pages.
+
+## App Launch
+
+The **Launch Illustration** and **Wolo Code Examples** appear in the hero on `/press_release/launch`. On narrow screens the illustration sits above the introduction and the **Get the app** link. Every example uses three equally wide word tiles with a faint background.
+
+## Technical Paper
+
+The **Equations** and **Diagrams** on `/paper` follow the LaTeX paper. In-text citations jump to **References** and highlight the matching entry. **Download PDF** opens the IEEE layout with **A. Process** and its diagram at the start of page two.

@@ -147,7 +147,8 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 - Shows sample input such as `Bengaluru cat apple tomato`. Choosing **Try: Bengaluru, India** pans to that sample and animates zoom-in to street level.
 - Links to:
   - About
-  - Technical Paper (`/paper`: mathematical derivation, grid algorithm, and IEEE PDF download)
+  - App Launch (`/press_release/launch`): responsive Launch Illustration, fixed-width Wolo Code Examples, and Get the app link
+  - Technical Paper (`/paper`): LaTeX-aligned Equations and Diagrams, linked References, and Download PDF with A. Process starting page two
   - Terms of use
   - Privacy policy
   - Credits (`/credits`: location codes, maps, browser, and icons)
