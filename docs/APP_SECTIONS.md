@@ -131,3 +131,7 @@ In the Wolo Code Scan Dialog, the OCR worker can preload during page idle and is
 The Top Bar Loader stays visible through the Input Icon Guide’s full closing fade.
 
 The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery reads the detected code box first and can retry with sparse-text OCR. Label Edit View shows the city and words while optional details finish reading. A successful capture shows the message "Please verify the code below". Review the fields and choose Go to open the address.
+
+## GIS Integration Guide (marketing page)
+
+The `/gis_integration` page is linked from the site menu as **GIS integration**. Its PDF download action opens `/gis-integration-guide.pdf`. The page describes an SDK-first pilot flow, a Wolo coordinate-link demonstration, coordinate reference handling, and integration planning; it does not promise a released SDK contract or require a hosted API.
