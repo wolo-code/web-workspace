@@ -101,7 +101,7 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 7. Place Search
 
-- Nearby and matching-city choices share geographic headings for common country and administrative paths. Continuous dotted branches lead to selectable cities. Unselected city and region rows share the same style. The map selector opens the active Cities or Regions section first, with the active reference highlighted across its full row at the top. Alternate city rows are tagged Nearby. The Cities section offers + Propose a city and the Regions section offers + Choose a regional reference, which opens a dialog of the same name with a top-right Close (×) button. The dialog suggests an editable anchor index for the map pin when the selected region covers it. Using that index keeps the pin in place.
+- Nearby and matching-city choices share geographic headings for common country and administrative paths. Continuous dotted branches lead to selectable cities. Unselected city and region rows share the same style. The map selector expands the active Cities or Regions section and highlights the active reference in place. Alternate city rows are tagged Nearby. The Cities section offers + Propose a city and the Regions section offers + Choose a regional reference, which opens a dialog of the same name with a top-right Close (×) button. The dialog suggests an editable anchor index for the map pin when the selected region covers it. Using that index keeps the pin in place. When the selected region does not cover the map pin, a centered gray message replaces the **Anchor index** controls.
 
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
