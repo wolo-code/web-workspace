@@ -3,6 +3,8 @@
 - For every UI change or question, look up each affected section, control, or modal in the relevant `APP_SECTIONS.md`. Say its exact documented name in progress updates and the final reply. If a UI element has no documented name, add it to `APP_SECTIONS.md` and use that name when reporting the work.
 
 - When modifying or adding application behavior, UI, or user-facing flows, update `APP_FEATURES.md` and `APP_SECTIONS.md` in the same change so the app documentation stays current.
+- Prefer an underline-only border for text entry fields, including search fields. Use an emphasized underline for keyboard focus.
+- Keep a tabbed modal's top edge, width, and shared controls fixed when switching tabs. Let its height adapt below the fixed top edge as content changes.
 - Keep commits atomic: each commit should contain one coherent behavior or documentation change, and unrelated files should be committed separately.
 - When a coherent piece of work is complete, **commit it immediately** in every affected nested repo (`app/project`, `site/project`, `site/project/root/Framework`, aggregator `D:\Wolo\Web`, and others only if they actually changed). Do not wait for the user to ask, and do not only suggest a message. First line is the summary; following lines explain why. Do not push unless asked. Skip `public/`, `interim/`, `.playwright-cli/`, and secrets.
 - Update the docs/APP_FEATURES doc when applicable
