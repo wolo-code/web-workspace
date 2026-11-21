@@ -38,9 +38,9 @@ Nearby and matching-city lists show each shared geographic path once, with dotte
 
 Map View place search uses a city as the code reference when a registered city grid covers the selected position. The country or regional reference is the fallback.
 
-The nearby, matching-name, and previous-city dialogs include the shared `CityRegionOptions.php` panel. Matching-name and previous-city dialogs list relevant country and regional anchors under **Use a regional code** and offer manual region/index entry there. **Propose a city** opens the existing proposal form. Empty previous-city history no longer disables the menu. The map selector has **Cities** and **Regions** sections. The active section expands and the current reference is highlighted in place. Unselected city and region rows share the same style. Alternate city rows carry **Nearby** tags. **+ Propose a city** sits under Cities, and **+ Choose a regional reference** sits under Regions and opens the **Choose a regional reference** dialog. Its **Close** (×) button has equal top and right insets. Both actions align to the right, and region cards line up with the city branches. Geographic headings use an accent color. The dialog suggests an editable anchor index for the map pin when the selected region covers it. Using that index keeps the pin in place. The **Region or country** list shows **Covers the map pin** first, followed by selectable gray options under **Out of range**. When the selected region does not cover the map pin, a centered gray message replaces the **Anchor index** controls.
+The nearby, matching-name, and previous-city dialogs share the **Cities** and **Regions** tabs in `CityRegionOptions.php`. The tabs use the centered pipe, fading underline, and keyboard controls of **Info Full View**. **Search cities** looks up registered cities and **Search regions or countries** filters the region registry by name and alias. The current reference is highlighted when available, and previous cities and regional references appear in their respective tabs.
 
-Regional references show an outlined numeric index badge immediately after the name in the regional choices. The manual region/country selector and anchor-index input are indented 16px beneath their labels and have underline-only borders, followed by a left-aligned filled **Use regional code** button. The matching-name and previous-city dialogs align their outlined **Propose a city** button to the right. Regional indices use clear monospace digits here, in the map info window, and in Label view and its print/download output; minimal PDF labels use Courier for the index.
+In **Choose city or region**, selecting a region that covers the map pin uses the pin's calculated index. Selecting another region pre-fills its name in the **Wolo Code Input** and positions the cursor for index entry. Calculated and previous regional references retain the outlined monospace index badge.
 
 
 The Address Panel omits the Code reference selector and Propose a city button.
@@ -51,7 +51,7 @@ The full Info view has City and Region tabs for the two plain-text formats. The 
 
 | Section | Controls | Behavior |
 | --- | --- | --- |
-| City Proposal Modal View | `#no_city_message`, `#no_city_name`, `#no_city_country`, `#no_city_include_location` | Open from city selectors. Name is required; country and selected location are optional. |
+| City Proposal Modal View | `#no_city_message`, `#no_city_name`, `#no_city_country`, `#no_city_include_location` | Name is required; country and selected location are optional. |
 | City proposal confirmation | `#no_city_request_id`, `#no_city_email_details` | Displays an acknowledged request ID, opens an editable email draft, and retains a fallback email link. Closing does not cancel an already submitted request. |
 
 

@@ -10,9 +10,9 @@
 ## Country regions and city menu actions
 
 - Country-level regions extend the registry with 257 country/territory namespaces, for 578 active named regions. Existing physical-region indices remain unchanged. Conflicting names gain a Region qualifier (e.g. Australia Region); unambiguous admin-0 three-letter codes are accepted as aliases.
-- Nearby-city, matching-name, and previous-city selectors all offer **Use a regional code** and **Propose a city**. Previous-city controls stay enabled with no history.
-- Regional choices for the current point include country and physical alternatives. A manual region/index form handles references elsewhere or no selected point. Map choices re-encode the point; manual map choices open the anchor center. Input-view choices set the three-word context; matching-name choices resolve the pending decode.
-- Regional indices have distinct outlined badges immediately after region names in the Use a regional code list in city selectors and use a clear monospace font in selectors, map info windows, and printed/downloaded labels (Courier for PDF indices). Manual region/country and anchor-index fields are indented 16px beneath their labels and use bottom borders; **Use regional code** is a left-aligned filled action, and the outlined **Propose a city** action aligns right.
+- The nearby, matching-name, and previous-city pickers share **Cities** and **Regions** tabs styled like **Info Full View**. Searches find registered cities by name and regions or countries by name or alias. The picker works with empty history.
+- A region covering the map pin uses its calculated anchor and keeps the pin in place. Selecting a region without a calculated anchor opens the **Wolo Code Input** with the region name filled in and the cursor ready for the index. Previously used indexed references are available under **Regions**.
+- Calculated and previous regional references retain the outlined monospace index badge. Map info windows and printed or downloaded labels also use monospace digits.
 
 
 ## Named regions and city proposals
@@ -21,7 +21,6 @@
 - The bundled frozen physical v1 registry activates 321 source-matched regions; 160 additional names remain pending. Twelve fallback namespaces cover every half-degree global tile. Overlapping region/index references can share one center and identical three words.
 - The Address Panel shows address details and code QR actions without Code reference or Propose a city controls. Regional links, previous contexts, and saved addresses resolve locally, including offline. See the app's `docs/REGIONAL_ANCHORS.md` for fixed geometry conventions, provenance, polar handling, and compatibility.
 - The full Info view has City and Region tabs. A centered pipe separates the tabs, and the gradient below them peaks beneath the selected label. The Region tab explains the anchor index with a centered Nepal example and a Mount Everest caption aligned with the right end of the fading rule. Both examples start with inline “e.g.”.
-- **Propose a city** in city selectors accepts a city name, optional country/region, and optional selected map location. It writes a request without automatically creating a city.
 - After the request is acknowledged, the user's email composer opens to support@wolo.codes with `Wolo add city request <request-id>` in the subject and editable details in the body. The saved request ID and **Add details by email** fallback remain visible. Failed writes do not announce success or open drafts; duplicate in-flight clicks are ignored.
 - The admin request console supports proposals without coordinates; the reviewer selects a center. Admin notification subjects also include the request ID.
 
@@ -95,13 +94,13 @@ Bottom notifications stay above modal dialogs and their dimmed overlay so modal 
 
 ### 6. City Proposals
 
-- Propose a city from city selectors with an optional selected location.
+- The **City Proposal Modal View** collects city requests when the existing city-coverage workflow offers it.
 - Acknowledged database requests display their ID and open an editable email draft with that ID in its subject; a fallback link remains available.
 - Requests await review without an indefinite processing spinner. Network or permission failures preserve the form for retry.
 
 ### 7. Place Search
 
-- Nearby and matching-city choices share geographic headings for common country and administrative paths. Continuous dotted branches lead to selectable cities. Unselected city and region rows share the same style. The map selector expands the active Cities or Regions section and highlights the active reference in place. Alternate city rows are tagged Nearby. The Cities section offers + Propose a city and the Regions section offers + Choose a regional reference, which opens a dialog of the same name with a top-right Close (×) button. The dialog suggests an editable anchor index for the map pin when the selected region covers it. Using that index keeps the pin in place. The **Region or country** list shows **Covers the map pin** first, followed by selectable gray options under **Out of range**. When the selected region does not cover the map pin, a centered gray message replaces the **Anchor index** controls.
+- Nearby and matching-city choices share geographic headings and dotted branches to selectable cities. **Choose city or region** uses the **Cities** and **Regions** tabs and highlights the current reference in its tab. Nearby alternatives carry **Nearby** tags.
 
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
