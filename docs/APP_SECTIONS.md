@@ -38,7 +38,7 @@ Nearby and matching-city lists show each shared geographic path once, with dotte
 
 Map View place search uses a city as the code reference when a registered city grid covers the selected position. The country or regional reference is the fallback.
 
-The nearby, matching-name, and previous-city dialogs share the **Cities** and **Regions** tabs in `CityRegionOptions.php`. The tabs use the centered pipe, fading underline, and keyboard controls of **Info Full View**. **Search cities** looks up registered cities and **Search regions or countries** filters the region registry by name and alias. The current reference is highlighted when available, and previous cities and regional references appear in their respective tabs.
+The nearby, matching-name, and previous-city dialogs share the **Cities** and **Regions** tabs in `CityRegionOptions.php`. The tabs use the centered pipe, fading underline, and keyboard controls of **Info Full View**. **Search cities** looks up registered cities and **Search regions or countries** filters the region registry by name and alias. The current reference is highlighted when available, and previous cities and regional references appear in their respective tabs. Both search fields use underline-only styling. Switching tabs keeps the picker’s top, width, and shared controls fixed as its height adapts.
 
 In **Choose city or region**, selecting a region that covers the map pin uses the pin's calculated index. Selecting another region pre-fills its name in the **Wolo Code Input** and positions the cursor for index entry. Calculated and previous regional references retain the outlined monospace index badge.
 
