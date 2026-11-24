@@ -102,7 +102,7 @@ The map info window scrolls when its content exceeds the available width or heig
 
 ### 7. Place Search
 
-- Nearby and matching-city choices share geographic headings and dotted branches to selectable cities. **Choose city or region** opens with the **City** and **Region** tabs at the top, shows the **Anchor Icon** opposite the **Close Button** with matching side spacing, and highlights the current reference in its tab. Nearby alternatives carry **Nearby** tags.
+- Nearby and matching-city choices share geographic headings and dotted branches to selectable cities. **Choose city or region** opens with the **City** and **Region** tabs at the top, shows the **Anchor Icon** opposite the **Close Button** with matching top and side spacing, and highlights the current reference in its tab. Nearby alternatives carry **Nearby** tags.
 
 - The web app includes Google Maps Places support.
 - User can search for a particular place.
