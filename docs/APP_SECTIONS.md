@@ -1,10 +1,68 @@
 # App sections
 
+Direct Wolo Code, coordinate and route links skip the first-run Info notice and automatic guide. Open Info to find the privacy policy or select **show guide**.
+
+## Wolo Code Input View
+
+Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
+
+## View and map-source controls
+
+In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source. The Google street map icon uses the primary accent (#69B7CF).
+
+Tap **Switch map** to cycle forward through enabled map modes. Hold **Switch map** for half a second to cycle backward.
+
+## Info
+
+Tap **Info** to open the Info modal. Hold **Info** for half a second to show the icon guide directly in Wolo Code Input View or Map View.
+
+## Map View: camera navigation
+
+Wolo map links accept `?zoom=17` and keep the requested zoom within the map’s supported range. Without a valid zoom, links open two levels below the active map source’s maximum. The dialog shown when opening a link has its Close button at the top right.
+
+The Terrain Map Canvas and alternate map sources keep manual pan and zoom in control: wheel, touch, drag, double-click, and camera-key input cancel automatic location focus, including its delayed final fit and chrome pan. New location selections, map-source changes, and entering Wolo Code Input View discard earlier camera callbacks. Bounds focus uses the full projected bounds and actual map dimensions with consistent padding, including across the dateline, so it does not zoom in too far before fitting back out. Focusing the current center works without a pan event, and camera limits stop animation cleanly.
+
+Map View filters small direction reversals within trackpad pinches reported as Ctrl+wheel while allowing a sustained reversal or a new pinch to change direction.
+
+## Map View: Pin Adjustment D-pad
+
+Hold an existing marker for half a second. Keep holding and drag to place the draft crosshair while the map stays still. Release to resume map gestures. A movable crosshair starts at the marker's exact location and the marker and info cards are temporarily hidden. Drag the crosshair or use the directional buttons or arrow keys to nudge it one screen pixel at a time. The **Pin Adjustment D-pad** has a rounded center and two side arms. Up and down stack in the center, and left and right sit on either side. The arrow glyph glows on press, and the panel uses the same frosted background as the other map controls. The **Camera D-pad** remains available for camera movement, and the **Locate Button** stays centered below the **Pin Adjustment D-pad**. Hold a directional button to keep nudging. Panning and zooming keep the crosshair anchored to the draft location. The checkmark on the right applies the move and refreshes the location details. The × on the left or Escape discards the draft. Opening and applying the adjustment keep the current map framing.
+
+## Map View: OpenStreetMap coverage
+
+OpenStreetMap caps manual and automatic zoom at level 19. Switching from a deeper zoom to OpenStreetMap sets the camera to level 19 without a notification. When tiles fail at a supported zoom level, the map steps out until tiles load or the minimum zoom is reached. The **Map data not yet available** notification accompanies missing-tile fallback. Tile failures during a fallback transition remain eligible for the next zoom-out step. Events from older zoom levels do not affect the current view.
+
+## Country and regional choices in city selectors
+
+Nearby and matching-city lists show each shared geographic path once, with dotted branches to the city buttons. A standalone result shows its full path, and each grouped button has its full path as its accessible name.
+
+Map View place search uses a city as the code reference when a registered city grid covers the selected position. The country or regional reference is the fallback.
+
+The nearby, matching-name, and previous-city dialogs share the **Cities** and **Regions** tabs in `CityRegionOptions.php`. The tabs use the centered pipe, fading underline, and keyboard controls of **Info Full View**. **Search cities** looks up registered cities and **Search regions or countries** filters the region registry by name and alias. The current reference is highlighted when available, and previous cities and regional references appear in their respective tabs. Both search fields use underline-only styling. Switching tabs keeps the picker’s top, width, and shared controls fixed as its height adapts.
+
+In **Choose city or region**, selecting a region that covers the map pin uses the pin's calculated index. Selecting another region pre-fills its name in the **Wolo Code Input** and positions the cursor for index entry. Calculated and previous regional references retain the outlined monospace index badge.
+
+
+The Address Panel omits the Code reference selector and Propose a city button.
+
+The full Info view has City and Region tabs for the two plain-text formats. The equal-width tabs keep a visible pipe centered above the fading rule, whose gradient peak moves beneath the selected label. Both examples use inline “e.g.”, and the Region tab places “Mt. Everest” below its example, aligned with the right end of the fading rule. Both panels share the same layout so the usage steps stay in place when switching tabs.
+
+## Regional reference and city proposal controls
+
+| Section | Controls | Behavior |
+| --- | --- | --- |
+| City Proposal Modal View | `#no_city_message`, `#no_city_name`, `#no_city_country`, `#no_city_include_location` | Name is required; country and selected location are optional. |
+| City proposal confirmation | `#no_city_request_id`, `#no_city_email_details` | Displays an acknowledged request ID, opens an editable email draft, and retains a fallback email link. Closing does not cancel an already submitted request. |
+
+
 The Bottom Notification Bar (`#notification_bottom`) sits above modal dialogs and the Overlay Layer.
 
 ## Map info window
 
 The map info window scrolls when its content exceeds the available width or height, keeping the Wolo Code and location actions accessible on macOS Safari and in small map views.
+Long-pressing the external maps button in the Map View info window copies the Wolo Code jump link as plain text, including its trailing slash. Direct Wolo Code links open Map View with the **Address Preview** modal already visible. The Close button is centered 20 px below the modal. The decoded address is vertically centered within the four-line area between the down arrow and Go, and longer addresses scroll within that area. The trailing-slash variant is called **External Map Redirect**. It uses the same modal with a Stop button and the page-wide loader visible above the overlay. The External map control in profile settings chooses where these links and other external map actions open.
+
+On narrow screens, Address Preview and External Map Redirect keep the Wolo logo at the top and the page footer at the bottom. The Code wordmark sits near the base of the Wolo wordmark, as in the Info modal. In light mode, the Close button has a tinted fill, visible outline, and dark teal icon against the white background.
 
 ## Bookmarks modal
 
@@ -14,26 +72,94 @@ The add/edit form contains Title, Segment, and one optional Address field with a
 
 Local bookmarks have an info icon in the top-left corner. Clicking it shows storage and sync guidance in the bottom notification pill. Sync to cloud is in the three-dot menu. Sync is dimmed while signed out and opens sign-in when clicked; while signed in, it saves the bookmark to the cloud before removing the local copy.
 
-Guide captions: the decode scanner and its parent stay above the guide overlay. Scan and Saved captions appear above their decode buttons; the map Saved caption appears below its bookmark button. Previous stays enabled during the guide even when city history is empty; its normal availability returns after dismissal. Static copyright footer text hides the browser caret without affecting input cursors.
+Guide captions: the decode scanner and its parent stay above the guide overlay. Scan and Saved captions appear above their decode buttons; the map Saved caption appears below its bookmark button. Previous stays enabled during the guide even when city history is empty; its normal availability returns after dismissal. Static copyright footer text hides the browser caret without affecting input cursors. In map views, the copyright year link is white with a dark shadow for contrast over map tiles.
 
-The Map View scanner and search artwork use the primary accent (#69B7CF).
+The Map View scanner and search artwork use the primary accent (#69B7CF). Both Map View and Wolo Code Input View use `Scan.svg`, a scanner icon with four corner markers and a centered filled rounded rectangle.
 
 The profile artwork (default icon and signed-in avatar) is 42px with a padded tap target. Narrow Map View centers the bookmark and profile horizontally in the spaces beside the logo and vertically in the header. The logo fits between the reserved control spaces.
 
-The label and Info modal logo groups share a 12px right offset with the centered main-page logo. The desktop main-page logo keeps a 10px gap from the right screen edge.
+The label and Info modal logo groups share a 12px right offset with the centered main-page logo. In Map View and Wolo Code Input View, the Code wordmark matches the size in the Info modal. Code sits beside Wolo on narrow screens and below it on desktop. The desktop main-page logo keeps a 10px gap from the right screen edge.
+
+Tap the **Wolo logo** to open wolo.codes. Press and hold it for half a second to clear the app cache and reload. The Wolo logo suppresses the iOS Safari link preview for this gesture.
 
 ## Label modal
 
 The label prefills Title with the selected Google place name, Segment with its unit or suite when provided, and Address with the formatted place address or the resolved street address. Existing label edits and saved details take precedence.
+The bookmark button, centered Label heading, and Close button share one row above the label. On narrow screens in light mode, both buttons have a tinted fill, visible outline, and dark teal icons against the white background.
+
+The three Wolo Code words use dark teal (#1F4E5F) in edit mode and 80% black (#333333) in preview mode. The top border, corner frame, and “scan or enter at www.wolo.codes” footer use the primary accent (#69B7CF) in both modes.
+
+The **Download** button saves a PNG with the complete Wolo Code logo at its preview size.
 
 The Label modal also provides the optional Address split/merge control with line 1 and line 2 examples. Existing two-line addresses open split; toggling preserves boundaries until merged text is edited. Saving while merged stores the displayed text as line 1 and clears line 2. Preview, print, and image exports show only the address text, preserving split lines and excluding the editing controls and placeholder examples. Closing and reopening the label restores its address fields.
 
 In both Saved and Label modals, the address split/merge icon appears only while the address editor or its toggle has keyboard focus. The icon sits at the bottom-right of the address line 1 field. Its gray lines stay the same in both states; only the filled primary-accent (#69B7CF) triangle changes direction, pointing down to split and up to merge.
 
-Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input.
+Wide Map View uses a 42px by 42px bookmark container joined without a gap to the left edge of the search input. Controls in Map View (Place Search Input, Bookmarks, Account, Info, Wolo Code, Locate, Switch map, and Camera D-pad) replicate the transparent background effect of the Go button (#decode_button, using rgb(255 255 255 / 50%) in light mode and rgb(34 34 68 / 50%) in dark mode with frosted glass blur).
 
 Saved-address navigation and the info-window Address action use the same Address Panel renderer. Both preserve the separator between saved address lines and show the address QR button whenever the address has nonempty text. The QR payload retains both lines in order.
 
-Scanner region inspection: hold the capture camera button for 500ms to show the detected printed container, city, and three-word outlines; release hides them without capturing. A tap captures normally. The container follows the physical rectangle or rounded rectangle, including cities wider than the code row.
+Hold the Scan Button for 500 ms to open the Scan Debug Log and enter Region Inspection. The Scan Frame uses bright moving dashes in live debug mode and a bright solid border on the frozen image or with reduced motion.
 
-Scanner card and optional details: detect the inner Wolo code box and the whole card against its background separately. The initial dashed frame is only a guide; live and repeat recognition use the full image, with pan/zoom changing candidate focus. The Address icon expands optional Title and Segment fields above the city/words section and Address line 1 and Address line 2 below it, matching the card. The existing Go arrow opens the reviewed address; there is no duplicate caret action. Cancel is a circular Close icon button with an accessible label. The modal grows with its content up to the viewport height with a gap above and below to reveal its extent before its body scrolls. A bookmark Save action saves the reviewed city, words and optional details directly while keeping the scanner open; Title is required for saving, and signed-out saves stay on the device. Title and Segment are separate rows above the inner box; both address parts are below it inside the card, line 1 first with blank-paragraph spacing before line 2. Wrapped rows stay in their paragraph. Edited values survive recognition of the same card and flow into the decoded location and its label/save editors on Use address. If Address details are expanded when Use address is chosen, the Address Panel opens immediately on decode with the recognized or edited address and stays open after reverse geocoding; collapsed details retain the normal closed panel behavior. The core code remains usable when the card or optional text is unreadable. Region inspection adds a purple whole-card outline independently of the guide.
+Scanner card and optional details: the Wolo Code Scan Dialog first looks for straight or rounded card boundaries across the available image. When a portrait Card Region covers the current focus, the scanner searches inside it for the smaller landscape Wolo Code Region before searching for markers elsewhere. OCR starts inside the code box. When a close-up clips the outer card, the scanner searches the full camera viewport and reads the inner Wolo Code Region on its own if its frame is visible. Live confirmation searches a padded crop around the previous card when it fits within half the frame. If the code box or card has moved outside that crop, the scanner searches the full frame again. Still-image OCR tries the inner code box with block and sparse-text modes before trying the card crop. Optional detail reads stay inside the detected card. The dashed Scan Frame guides alignment across the full visible camera image. Review zoom and pan define the visible photo crop for detection and OCR. The Address icon expands optional Title and Segment fields above the city/words section and Address line 1 and Address line 2 below it, matching the card. The existing Go arrow opens the reviewed address; there is no duplicate caret action. Cancel is a circular Close icon button with an accessible label. The modal grows with its content up to the viewport height with a gap above and below to reveal its extent before its body scrolls. A bookmark Save action saves the reviewed city, words and optional details directly while keeping the scanner open; Title is required for saving, and signed-out saves stay on the device. Title and Segment are separate rows above the inner box; both address parts are below it inside the card, line 1 first with blank-paragraph spacing before line 2. Wrapped rows stay in their paragraph. Edited values survive recognition of the same card and flow into the decoded location and its label/save editors on Use address. If Address details are expanded when Use address is chosen, the Address Panel opens immediately on decode with the recognized or edited address and stays open after reverse geocoding; collapsed details retain the normal closed panel behavior. The core code remains usable when the card or optional text is unreadable. Region Inspection can show the portrait Card Region in purple as soon as its boundary is detected, even before the blue Wolo Code Region is found. The full preview stays visible for reframing.
+
+## Map and location lifecycle
+
+Location Wolo Label View remains open across background service-worker updates. New page assets apply on the next navigation or manual refresh. Completed/superseded Location Accuracy Indicator sessions ignore queued geolocation callbacks. Entering Wolo Code Input View or another map source hides the Apple Maps stage, including when MapKit finishes loading later. Hidden Google POIs do not replace coordinate-selected results on non-Google maps.
+
+
+## Multiple map places and route sharing
+
+Shift+Go retains the current info card while opening another. Info cards have no close button. Backspace or Delete removes the active card and its marker, or the focused Places row; typing in a nonempty search field or another editable field keeps normal editing behavior. Click a retained card to make it active before removing it.
+
+The primary-accent Places icon uses two list items, shows a **Places** hover tooltip and opens the ordered list when at least two places exist. The rounded panel matches the controls’ glass treatment (50% white in light mode, 50% dark blue in dark mode, with 4px backdrop blur). Place names begin with a capital letter and have a faint text halo for contrast over the glass. Soft rows use letter badges matching the map markers: A–Z, then AA–AZ, BA, and onward. Map-marker letters have a faint white glow for legibility. Each row places the remove control to the left of the drag handle at the far right. The drag handle uses an equals sign; both it and the remove control have faint backgrounds and appear on row hover or keyboard focus (always visible on touch devices). A horizontal line between rows marks the drop boundary, with the upper/lower half of a hovered row selecting before/after. The drag handle supports mouse/touch reordering; focus the handle and use Arrow Up/Down for keyboard reordering. A hover or keyboard-focus **×** removes that place and its marker; touch devices show the remove control continuously. Removing or reordering places refreshes the letter labels and route order. When multiple places exist, the Address box shows the active marker’s letter in a circle at the top-left, with slight padding around the top caption line; the badge disappears for a single place. Info cards omit the letter badge.
+
+The bottom icon toolbar uses the existing external-link icon for **Directions** and the existing share icon for **Route**. Tap/click Route to share a Wolo Code based URL. Hold it for 500 ms to share a coordinate based URL. Sharing uses the native share sheet where available and copies the link otherwise. Both URL types use `/?from=...&via=...&to=...` with repeated `via` parameters for additional stops. Wolo routes preserve each opened card's full city/region reference and three words; unopened search results use a globally resolvable regional Wolo Code. Coordinate routes preserve latitude/longitude directly. Both formats restore all ordered markers and fit them in view; Wolo decoding waits for the word list and resolves the complete route before adding markers. Invalid or unknown stops show an error. Select a marker or row to open its info card. Directions follow the list order and split long routes into overlapping batches for mobile Maps support.
+
+City-list, Go, Places, external-link/Directions, route-share, and address icons share a subtle 8% grow on hover and keyboard focus. The artwork scales over 240 ms while hit targets and captions stay stationary; reduced-motion preference removes the transition.
+
+## Wolo Code Scan Dialog
+
+Tap the **Scan Button** in Map View or Wolo Code Input View to open the scanner. Hold it for 500 ms to start in debug mode. The **Scan Debug Log** overlays the viewfinder and shows elapsed times for camera startup, detection, OCR and each processed frame. It pauses in Label Edit View, resumes on Rescan, and clears when the dialog closes.
+
+In Label Edit View, Rescan sits at the top left, aligned with Close, after capture or Typing. The Bottom Controls Panel keeps Save on the left, Address Details in the center, and Go on the right while the fields scroll. Save and Go sit 24 px in from the dialog edges. The Scanner Status Message uses theme-aware frosted glass over the frozen Viewfinder. Go follows the active theme in both paths. The Viewfinder uses a solid theme color during live scanning and a theme-aware chequered background behind the frozen preview. Live video fills it while preserving the camera's aspect ratio. Flashlight appears between Gallery and Typing when the active camera supports continuous light and switches off when the camera is released. Zoom Controls sit in a horizontal row below the Viewfinder. Reset Zoom sits between Zoom Out and Zoom In. It shows a magnifying glass at 100% and the current percentage at higher zoom levels. Press it to return to 100%. Each control shows a circle on hover, press or keyboard focus.
+
+When a read fails, the Wolo Code Scan Dialog looks for four border edges around the Card Region or Wolo Code Region and tries perspective correction before retrying with a whole-frame rotation. The Scan Debug Log identifies the border used for correction.
+
+In **Label Edit View**, empty Title, Segment, Address line 1, and Address line 2 fields shimmer while their OCR pass runs. Recognized text fills in when the read finishes, and edits made during the read are preserved.
+
+OCR skips the label logo, footer and blank rows. The first readable address paragraph fills Address line 1.
+
+In the Wolo Code Scan Dialog, the OCR worker can preload during page idle and is reused when the dialog opens. Gallery starts OCR setup before file selection and decodes the selected image while the worker gets ready. Three exact, high-confidence words can open Label Edit View when the city is unreadable. Live confirmation rechecks the previous card crop when available and reads the smaller code box inside it. City uses the same underline as the three word fields. Hiding the page releases the camera. When the page is visible again, a live scan resumes with a fresh camera stream. Rescan returns from Label Edit View to an edge-to-edge live Viewfinder.
+
+The Top Bar Loader stays visible through the Input Icon Guide’s full closing fade.
+
+The Wolo Code Scan Dialog reads landscape labels from native camera pixels and can straighten a slightly tilted label. Label Edit View opens after one high-confidence read or two matching three-word reads in the same region, with one missed frame allowed. Gallery reads the detected code box first and can retry with sparse-text OCR. Label Edit View shows the city and words while optional details finish reading. A successful capture shows the message "Please verify the code below". Review the fields and choose Go to open the address.
+
+## GIS Integration Guide (marketing page)
+
+The `/gis_integration` page is linked from the site menu as **GIS integration**. **Schedule a meeting** opens the Google Calendar appointment page. **Download the PDF** saves `/gis-integration-guide.pdf` as `wolo-gis-and-location-platform-integration-guide.pdf`, which also links to the appointment page. **Discuss your integration** lists the details to share by email. The appointment scheduler also has a short URL at `/meet`.
+
+## Site Footer
+
+**Updated** is right-aligned in the shared footer across marketing pages.
+
+## App Launch
+
+The **Launch Illustration** and **Wolo Code Examples** appear in the hero on `/press_release/launch`. On narrow screens the illustration sits above the introduction and the **Get the app** link. Every example uses three equally wide word tiles with a faint background.
+
+## Technical Paper
+
+The **Equations** and **Diagrams** on `/paper` follow the LaTeX paper. **Relative position** distinguishes capital theta from lowercase theta and uses an upright delta. Equations can scroll horizontally when needed. In dark mode, diagrams use light labels and strokes on dark cards. In-text citations jump to **References** and highlight the matching entry. **Download PDF** opens the IEEE layout with **A. Process** and its diagram at the start of page two.
+
+The **Technical Paper** metadata row displays **IEEE Conference Paper Format | doc v1.2.0 | Download PDF** on one line, with **| doc v1.2.0 |** anchored exactly at the horizontal center using equal-width side columns. The paper footer places the version on the right; **Updated** remains at the bottom in the **Site Footer**.
+
+The **Technical Paper** **Download PDF** link places its download icon after the text.
+
+The **Technical Paper** **Diagrams** and **Download PDF** show the full-height double-headed dimension arrow for Θ and D in Grid G.
+
+The **GIS Integration Guide (marketing page)** explains grid rounding: about 1 m per axis and about 1.4 m maximum horizontal displacement for a roughly 2 m grid, in addition to source measurement error.
+
+The **GIS Integration Guide (marketing page)** See also links use **Wolo Code** for the technical paper and word list.
+
+The **GIS Integration Guide (marketing page)** describes coordinate precision in decimal degrees and arcseconds, latitude-dependent longitude spacing, and the distinction between coordinate precision and positional accuracy.

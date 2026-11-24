@@ -1,0 +1,208 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5255 >>
+stream
+0.080 0.520 0.610 rg
+48.0 809.0 499.0 2.0 re f
+0.080 0.450 0.540 rg BT /F2 10.0 Tf 1 0 0 1 48.0 792.0 Tm (WOLO CODE) Tj ET
+0.380 0.460 0.490 rg BT /F2 8.0 Tf 1 0 0 1 142.0 794.0 Tm (GIS INTEGRATION GUIDE  |  CLIENT BRIEF) Tj ET
+0.820 0.870 0.880 RG 0.7 w 48.0 778.0 m 547.0 778.0 l S
+0.820 0.870 0.880 RG 0.7 w 48.0 39.0 m 547.0 39.0 l S
+0.380 0.460 0.490 rg BT /F1 8.0 Tf 1 0 0 1 48.0 21.0 Tm (wolo.codes  |  evaluation guide) Tj ET
+0.080 0.450 0.540 rg BT /F2 8.0 Tf 1 0 0 1 540.0 21.0 Tm (1) Tj ET
+0.080 0.450 0.540 rg BT /F2 8.0 Tf 1 0 0 1 48.0 750.0 Tm (FOR GIS AND LOCATION PLATFORM TEAMS) Tj ET
+0.120 0.210 0.240 rg BT /F2 21.0 Tf 1 0 0 1 48.0 719.0 Tm (Evaluate Wolo alongside your existing GIS) Tj ET
+0.380 0.460 0.490 rg BT /F1 10.0 Tf 1 0 0 1 48.0 697.0 Tm (Give locations in your GIS a shareable Wolo Code: a city or regional reference and three) Tj ET
+0.380 0.460 0.490 rg BT /F1 10.0 Tf 1 0 0 1 48.0 682.0 Tm (everyday words. Try a coordinate lookup in the Wolo web app, or contact us to discuss an SDK) Tj ET
+0.380 0.460 0.490 rg BT /F1 10.0 Tf 1 0 0 1 48.0 667.0 Tm (integration for your platform. Your GIS remains the system of record for geometry, attributes,) Tj ET
+0.380 0.460 0.490 rg BT /F1 10.0 Tf 1 0 0 1 48.0 652.0 Tm (and spatial analysis.) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 616.0 Tm (What Wolo contributes) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 607.0 m 90.0 607.0 l S
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 588.8 Tm (A Wolo Code identifies a point using a Wolo city or named regional reference, followed by three) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 575.8 Tm (words from a fixed, ordered 1,024-word list. Regional codes also carry an anchor index. Coverage) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 562.8 Tm (is a finite city list, plus region codes on a 0.5-degree grid.) Tj ET
+0.960 0.980 0.985 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 523.0 499.0 28.0 re B
+0.080 0.450 0.540 rg BT /F2 9.2 Tf 1 0 0 1 59.0 534.8 Tm (Your input) Tj ET
+0.310 0.390 0.420 rg BT /F1 8.5 Tf 1 0 0 1 147.0 535.5 Tm (A point with latitude and longitude, plus its Wolo city or regional reference.) Tj ET
+0.960 0.980 0.985 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 490.0 499.0 28.0 re B
+0.080 0.450 0.540 rg BT /F2 9.2 Tf 1 0 0 1 59.0 501.8 Tm (Wolo output) Tj ET
+0.310 0.390 0.420 rg BT /F1 8.5 Tf 1 0 0 1 147.0 502.5 Tm (A Wolo reference and three dictionary words for the point.) Tj ET
+0.960 0.980 0.985 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 446.0 499.0 39.0 re B
+0.080 0.450 0.540 rg BT /F2 9.2 Tf 1 0 0 1 59.0 468.8 Tm (Your GIS keeps) Tj ET
+0.310 0.390 0.420 rg BT /F1 8.5 Tf 1 0 0 1 147.0 469.5 Tm (The original geometry, feature ID, attributes, coordinate reference system, and) Tj ET
+0.310 0.390 0.420 rg BT /F1 8.5 Tf 1 0 0 1 147.0 458.5 Tm (business rules.) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 431.8 Tm (The grid spacing is about 2 m, and a decoded point lands within about 1 m of the source. A Wolo) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 418.8 Tm (Code does not improve the accuracy of the source geometry, GNSS, or survey measurements, and it) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 405.8 Tm (does not replace your GIS coordinates.) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 371.0 Tm (Using Wolo in a GIS) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 362.0 m 90.0 362.0 l S
+0.150 0.210 0.240 rg BT /F2 10.5 Tf 1 0 0 1 48.0 339.5 Tm (01   Add a Wolo link to a GIS feature) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 323.8 Tm (Add a link in a feature popup or table. The coordinate lookup URL opens the point in the Wolo web) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 310.8 Tm (app:) Tj ET
+0.950 0.970 0.980 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 276.2 499.0 22.8 re B
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 285.4 Tm (https://wolo.codes/?q=12.9731,77.5964) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 260.0 Tm (The same point as a Wolo Code URL is Bengaluru map marble pest:) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 247.0 Tm (wolo.codes/bengaluru.map.marble.pest.) Tj ET
+0.150 0.210 0.240 rg BT /F2 10.5 Tf 1 0 0 1 48.0 221.7 Tm (02   Integrate with an SDK) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 206.0 Tm (An SDK integration runs the codec in your application or data pipeline. With the ordered word list) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 193.0 Tm (and Wolo reference data available locally, you can encode and decode points offline.) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 172.0 Tm (Encode a point using its geographic coordinates and Wolo reference. Use the same reference to) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 159.0 Tm (decode the words back to coordinates. The example shows the workflow in pseudocode.) Tj ET
+0.950 0.970 0.980 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 102.8 499.0 44.4 re B
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 133.6 Tm (reference = wolo.reference\("Bengaluru"\)) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 122.8 Tm (code = wolo.encode\(latitude, longitude, reference\)) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 112.0 Tm (point = wolo.decode\(code, reference\)) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 5553 >>
+stream
+0.080 0.520 0.610 rg
+48.0 809.0 499.0 2.0 re f
+0.080 0.450 0.540 rg BT /F2 10.0 Tf 1 0 0 1 48.0 792.0 Tm (WOLO CODE) Tj ET
+0.380 0.460 0.490 rg BT /F2 8.0 Tf 1 0 0 1 142.0 794.0 Tm (GIS INTEGRATION GUIDE  |  CLIENT BRIEF) Tj ET
+0.820 0.870 0.880 RG 0.7 w 48.0 778.0 m 547.0 778.0 l S
+0.820 0.870 0.880 RG 0.7 w 48.0 39.0 m 547.0 39.0 l S
+0.380 0.460 0.490 rg BT /F1 8.0 Tf 1 0 0 1 48.0 21.0 Tm (wolo.codes  |  evaluation guide) Tj ET
+0.080 0.450 0.540 rg BT /F2 8.0 Tf 1 0 0 1 540.0 21.0 Tm (2) Tj ET
+0.150 0.210 0.240 rg BT /F2 10.5 Tf 1 0 0 1 48.0 744.5 Tm (03   Keep the code beside your existing geometry) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 728.8 Tm (Keep your current point geometry and add fields for the display code and Wolo URL. Keep the source) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 715.8 Tm (feature ID so a shared code can be traced back to its GIS record. For example:) Tj ET
+0.950 0.970 0.980 rg
+0.840 0.890 0.900 RG 0.7 w
+48.0 562.4 499.0 141.6 re B
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 690.4 Tm ({) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 679.6 Tm (  "type": "Feature",) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 668.8 Tm (  "properties": {) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 658.0 Tm (    "source_id": "POI-041",) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 647.2 Tm (    "wolo_code": "Bengaluru map marble pest",) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 636.4 Tm (    "wolo_url": "https://wolo.codes/bengaluru.map.marble.pest") Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 625.6 Tm (  },) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 614.8 Tm (  "geometry": {) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 604.0 Tm (    "type": "Point",) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 593.2 Tm (    "coordinates": [77.5964, 12.9731]) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 582.4 Tm (  }) Tj ET
+0.160 0.240 0.270 rg BT /F3 7.6 Tf 1 0 0 1 58.0 571.6 Tm (}) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 532.4 Tm (Examples) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 523.4 m 90.0 523.4 l S
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 505.2 Tm (City) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 484.2 Tm (Lalbagh Park, Bengaluru: Bengaluru leopard lotus guitar -) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 471.2 Tm (wolo.codes/bengaluru.leopard.lotus.guitar \(12.94984, 77.58661\)) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 450.2 Tm (Region) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 429.2 Tm (Gurudongmar Lake, Sikkim: \\ India 1112 candle kiwi mango / -) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 416.2 Tm (wolo.codes/india-1112.candle.kiwi.mango \(28.02449, 88.71165\)) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 395.2 Tm (In a Wolo Code URL, dots separate the city or region+index from each of the three words. Spaces) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 382.2 Tm (inside a multi-word city, or between a region name and its index, become hyphens, as in) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 369.2 Tm (india-1112.candle.kiwi.mango.) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 334.4 Tm (Coordinates and data) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 325.4 m 90.0 325.4 l S
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 306.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 307.2 Tm (Coordinate system: transform projected or local coordinates to geographic WGS 84) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 294.2 Tm (latitude and longitude when you encode or decode, and keep the source geometry in your) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 281.2 Tm (GIS.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 260.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 261.2 Tm (Reference context: the words need their city context or, for a regional code, the region) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 248.2 Tm (and anchor index. Store and share that context with the words.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 227.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 228.2 Tm (Word list: use the exact ordered Wolo word list at wcodes.org/wordlist. Do not sort,) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 215.2 Tm (normalize into a different order, or substitute words.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 194.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 195.2 Tm (Round-trip checks: encoding quantizes the point to Wolo's grid. Compare the decoded) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 182.2 Tm (coordinate with the original, allowing for the 2 m grid and the accuracy of your source) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 169.2 Tm (data.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 148.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 149.2 Tm (Coverage: a finite list of Wolo cities, plus region codes on a 0.5-degree grid for) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 136.2 Tm (places outside those cities.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 115.9 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 116.2 Tm (Offline use: encode and decode need the word list plus the city and region list, not a) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 103.2 Tm (database of every point.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R /Annots [<< /Type /Annot /Subtype /Link /Rect [48 478.0 156 490.0] /Border [0 0 0] /A << /S /URI /URI (https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ01yviNN-9I3NNE00O3oJkJGs1S9PEZ1Qd7aixpSyJLZIo5ZTlAxeESBicaaxaFXhZ5oQ5NWM94) >> >>] >>
+endobj
+11 0 obj
+<< /Length 2627 >>
+stream
+0.080 0.520 0.610 rg
+48.0 809.0 499.0 2.0 re f
+0.080 0.450 0.540 rg BT /F2 10.0 Tf 1 0 0 1 48.0 792.0 Tm (WOLO CODE) Tj ET
+0.380 0.460 0.490 rg BT /F2 8.0 Tf 1 0 0 1 142.0 794.0 Tm (GIS INTEGRATION GUIDE  |  CLIENT BRIEF) Tj ET
+0.820 0.870 0.880 RG 0.7 w 48.0 778.0 m 547.0 778.0 l S
+0.820 0.870 0.880 RG 0.7 w 48.0 39.0 m 547.0 39.0 l S
+0.380 0.460 0.490 rg BT /F1 8.0 Tf 1 0 0 1 48.0 21.0 Tm (wolo.codes  |  evaluation guide) Tj ET
+0.080 0.450 0.540 rg BT /F2 8.0 Tf 1 0 0 1 540.0 21.0 Tm (3) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 735.0 Tm (Checklist) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 726.0 m 90.0 726.0 l S
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 707.5 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 707.8 Tm (Choose a small set of features, including points near city boundaries and the edges of) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 694.8 Tm (your area.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 674.5 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 674.8 Tm (Note the source coordinate system, transform to latitude/longitude, and record the Wolo) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 661.8 Tm (city or regional reference used.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 641.5 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 641.8 Tm (Encode and decode, then compare the returned positions with the source points.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 621.5 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 621.8 Tm (Open the coordinate lookup and Wolo links from the GIS client, including on field) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 608.8 Tm (devices.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 51.0 588.5 Tm (-) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 588.8 Tm (Decide how codes will be stored, refreshed when source geometry changes, and handled) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 63.0 575.8 Tm (when a city is unavailable, including by falling back to a region code.) Tj ET
+0.080 0.450 0.540 rg BT /F2 14.0 Tf 1 0 0 1 48.0 542.0 Tm (Discuss your integration) Tj ET
+0.080 0.520 0.610 RG 1.5 w 48.0 533.0 m 90.0 533.0 l S
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 514.8 Tm (Contact us with your requirements at support@wolo.codes. Tell us which GIS and runtime you use,) Tj ET
+0.150 0.210 0.240 rg BT /F1 9.2 Tf 1 0 0 1 48.0 501.8 Tm (what you want to build, and whether you need offline or batch processing.) Tj ET
+0.080 0.450 0.540 rg BT /F2 9.5 Tf 1 0 0 1 48.0 480.5 Tm (Schedule a meeting) Tj ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000000347 00000 n 
+0000000493 00000 n 
+0000005800 00000 n 
+0000005946 00000 n 
+0000011551 00000 n 
+0000011955 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+14635
+%%EOF
