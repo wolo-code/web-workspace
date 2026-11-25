@@ -2,7 +2,7 @@
 
 ## Technical Paper
 
-The Technical Paper shows city, region, and precision codes between a backslash and a forward slash. **Download PDF** opens the IEEE-formatted edition.
+The Technical Paper shows city, region, and precision codes between a backslash and a forward slash. **Download PDF** opens the IEEE-formatted edition. The web edition shows the intermediate calculations in **Worked example** under **Precision Wolo Code**.
 
 Direct Wolo Code, coordinate and route links skip the first-run Info notice and automatic guide. Open Info to find the privacy policy or select **show guide**.
 

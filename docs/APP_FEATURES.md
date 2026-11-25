@@ -2,7 +2,7 @@
 
 ## Technical Paper
 
-- The web paper and its PDF use the same delimiters in code examples and cite the pinned WordList JSON snapshot.
+- The web paper and its PDF use the same delimiters in code examples and cite the pinned WordList JSON snapshot. The web edition distinguishes the latitude and longitude steps and shows the precision example from grid indices through dictionary words.
 
 ## Map camera navigation
 
