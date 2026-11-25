@@ -1,5 +1,9 @@
 # App sections
 
+## Technical Paper
+
+The Technical Paper shows city, region, and precision codes between a backslash and a forward slash. **Download PDF** opens the IEEE-formatted edition.
+
 Direct Wolo Code, coordinate and route links skip the first-run Info notice and automatic guide. Open Info to find the privacy policy or select **show guide**.
 
 ## Wolo Code Input View

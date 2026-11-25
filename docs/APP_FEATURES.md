@@ -1,5 +1,9 @@
 
 
+## Technical Paper
+
+- The web paper and its PDF use the same delimiters in code examples and cite the pinned WordList JSON snapshot.
+
 ## Map camera navigation
 
 - Bounds-based zoom uses the full projected area, the map canvas size, and the same padding as the final fit, preventing a zoom-in overshoot followed by a zoom-out correction. Dateline-crossing bounds and the viewport minimum zoom are respected.
