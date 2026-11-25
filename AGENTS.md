@@ -6,7 +6,7 @@
 
 - When modifying or adding application behavior, UI, or user-facing flows, update `APP_FEATURES.md` and `APP_SECTIONS.md` in the same change so the app documentation stays current.
 - Prefer an underline-only border for text entry fields, including search fields. Use an emphasized underline for keyboard focus.
-- In multi-paragraph UI help text, end each paragraph with a full stop except the last. Keep full stops between sentences within a paragraph.
+- In multi-paragraph UI help text, end each paragraph with a full stop except the last or one followed by a visible divider. Keep full stops between sentences within a paragraph.
 - Give corner icons equal visible padding from both adjacent edges. Account for any whitespace inside the icon artwork and center the icon in its hit area.
 - Keep a tabbed modal's top edge, width, and shared controls fixed when switching tabs. Let its height adapt below the fixed top edge as content changes.
 - Keep commits atomic: each commit should contain one coherent behavior or documentation change, and unrelated files should be committed separately.
