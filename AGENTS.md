@@ -12,6 +12,12 @@
 - Update the docs/APP_FEATURES doc when applicable
 - Do not edit files in `public/` and `interim/` for source changes; they are generated/rebuilt before deployment.
 
+## Technical Paper PDF
+
+- After changing the paper or any figure, rebuild the PDF, inspect the changed page, and refresh the site resource aliases and the generated outputs for each affected site or hosting build.
+- Follow **Download PDF** on the **Technical Paper** page for the target environment. Fetch the linked URL with a fresh cache key and compare the response SHA-256 with the rebuilt PDF. Check the bytes at the exact URL the page uses as well, since existing links or caches may still serve an earlier revision.
+- If the deployed URL serves an older PDF, report the publish step that is pending. After an authorized deployment, check the live **Download PDF** URL again. A matching local file or a new query parameter alone is insufficient to verify the live download.
+
 ## Repository structure
 
 This is the `wolo.codes` monorepo — an aggregator of several independently-versioned repos, each checked out under its own path (some are git submodules):
