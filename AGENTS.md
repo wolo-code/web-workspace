@@ -1,5 +1,7 @@
 # Agent Instructions
 
+- In documentation and examples, put a space after the opening backslash and before the closing forward slash of a delimited Wolo Code, for example `\ Bangalore cat apple tomato /`.
+
 - For every UI change or question, look up each affected section, control, or modal in the relevant `APP_SECTIONS.md`. Say its exact documented name in progress updates and the final reply. If a UI element has no documented name, add it to `APP_SECTIONS.md` and use that name when reporting the work.
 
 - When modifying or adding application behavior, UI, or user-facing flows, update `APP_FEATURES.md` and `APP_SECTIONS.md` in the same change so the app documentation stays current.
