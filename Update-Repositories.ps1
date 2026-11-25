@@ -61,13 +61,13 @@ foreach ($repository in $repositories) {
     try {
         $branch = (& git -C $repository branch --show-current).Trim()
         if ([string]::IsNullOrWhiteSpace($branch)) {
-            Write-Warning "Skipping $displayPath: detached HEAD."
+            Write-Warning "Skipping ${displayPath}: detached HEAD."
             continue
         }
 
         $status = @(git -C $repository status --porcelain)
         if ($status.Count -gt 0) {
-            Write-Warning "Skipping $displayPath: working tree has local changes."
+            Write-Warning "Skipping ${displayPath}: working tree has local changes."
             continue
         }
 
