@@ -75,7 +75,7 @@ The map info window scrolls when its content exceeds the available width or heig
 - Last three tokens are treated as the code words.
 - Preceding tokens are treated as the city.
 - Web app resolves ambiguous city names through a "Choose the city" dialog.
-- Unrecognized input opens a padded dialog that centers the typed value and offers matching primary-accent Edit code and Search map buttons (reverse-play and play icons). The **Search Map Button** opens Map View and the Address Panel. Holding it or the **Map Proceed Button** (Go) turns off automatic showing of the **Input Icon Guide** in both views. Holding Go while the guide is visible dismisses it.
+- Unrecognized input opens a padded dialog that centers the typed value and offers matching primary-accent Edit code and Search map buttons (reverse-play and play icons). The **Search Map Button** opens Map View and the Address Panel. Holding it or the **Wolo Code Proceed Button** (Go) on the decode page turns off automatic showing of the **Input Icon Guide** in both views. Holding decode Go while the guide is visible dismisses it.
 - Decoded location is shown on the map and can be used for downstream map/navigation actions.
 
 ### 4. City Context and City Selection

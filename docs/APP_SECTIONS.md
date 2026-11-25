@@ -20,7 +20,7 @@ Tap **Switch map** to cycle forward through enabled map modes. Hold **Switch map
 
 Tap **Info** to open the Info modal. Hold **Info** for half a second to show the icon guide directly in Wolo Code Input View or Map View.
 
-Any key press dismisses the **Input Icon Guide**. Holding the **Map Proceed Button** (Go) or the **Search Map Button** in the **Unrecognized Code Dialog** prevents the guide from opening automatically again in that browser. Select **show guide** in **Info Modal View** to reopen it.
+Any key press dismisses the **Input Icon Guide**. Holding the **Wolo Code Proceed Button** (Go) on the decode page or the **Search Map Button** in the **Unrecognized Code Dialog** prevents the guide from opening automatically again in that browser. Select **show guide** in **Info Modal View** to reopen it.
 
 The **Info Code Reference Note** in **Info Full View** appears below the City and Region format panels and stays visible across both tabs.
 
