@@ -109,7 +109,7 @@ Scanner card and optional details: the Wolo Code Scan Dialog first looks for str
 
 ## Map and location lifecycle
 
-Location Wolo Label View remains open across background service-worker updates. New page assets apply on the next navigation or manual refresh. Completed/superseded Location Accuracy Indicator sessions ignore queued geolocation callbacks. When a fix is accepted automatically or by pressing the Location Proceed Button, a very faint, non-interactive FF silhouette stays visible with the resulting Wolo Code. Entering Wolo Code Input View or another map source hides the Apple Maps stage, including when MapKit finishes loading later. Hidden Google POIs do not replace coordinate-selected results on non-Google maps.
+Location Wolo Label View remains open across background service-worker updates. New page assets apply on the next navigation or manual refresh. Completed/superseded Location Accuracy Indicator sessions ignore queued geolocation callbacks. When a fix is accepted automatically or by pressing the Location Proceed Button, a very faint, non-interactive FF silhouette at 18% opacity stays visible with the resulting Wolo Code. Entering Wolo Code Input View or another map source hides the Apple Maps stage, including when MapKit finishes loading later. Hidden Google POIs do not replace coordinate-selected results on non-Google maps.
 
 
 ## Multiple map places and route sharing
