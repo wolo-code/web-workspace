@@ -91,7 +91,7 @@ The map info window scrolls when its content exceeds the available width or heig
 - Stores location permission preference and "do not ask again" state in local storage.
 - Uses browser geolocation watch for high-accuracy location.
 - Shows accuracy in meters.
-- Shows an accuracy indicator whose color changes with accuracy. The strip is a fixed-height pill: the FF proceed control sits flush on the same layer, is vertically centered, and the width and item positions stay put across meter values and after proceed hides the control.
+- Shows an accuracy indicator whose color changes with accuracy. The strip is a fixed-height pill: the FF proceed control sits flush on the same layer, is vertically centered, and the width and item positions stay put across meter values and after geolocation completes, when the Location Proceed Button leaves a very faint, non-interactive FF silhouette.
 - Provides a "Proceed" control so users can accept the current fix before the watch completes. The top bar loader shows until the first GPS fix; then it hides so the zoom-in animation is the progress cue. Locate zooms to that first accuracy circle once and does not add a zoom-out/zoom-in snap at the end. While accuracy stays at `99+`, locate counts one sample per second even if the browser does not emit new GPS events, and auto-proceeds after five consecutive samples, unless locate is in long-press override (the locate icon stays blinking and auto-proceed is skipped).
 - Handles permission denied, unsupported browser geolocation, invalid `0,0` positions, timeout, and low-accuracy states.
 
