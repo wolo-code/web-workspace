@@ -16,6 +16,8 @@ Tap **Switch map** to cycle forward through enabled map modes. Hold **Switch map
 
 Tap **Info** to open the Info modal. Hold **Info** for half a second to show the icon guide directly in Wolo Code Input View or Map View.
 
+The **Info Code Reference Note** in **Info Full View** appears below the City and Region format panels and stays visible across both tabs.
+
 ## Map View: camera navigation
 
 Wolo map links accept `?zoom=17` and keep the requested zoom within the map’s supported range. Without a valid zoom, links open two levels below the active map source’s maximum. The dialog shown when opening a link has its Close button at the top right.
@@ -41,6 +43,8 @@ Map View place search uses a city as the code reference when a registered city g
 The nearby, matching-name, and previous-city dialogs share the **Cities** and **Regions** tabs in `CityRegionOptions.php`. The tabs use the centered pipe, fading underline, and keyboard controls of **Info Full View**. **Search cities** looks up registered cities and **Search regions or countries** filters the region registry by name and alias. The current reference is highlighted when available, and previous cities and regional references appear in their respective tabs. Both search fields use underline-only styling. Switching tabs keeps the picker’s top, width, and shared controls fixed as its height adapts.
 
 The previous-city and nearby versions of **Choose city or region** open with the **City** and **Region** tabs at the top. The **Anchor Icon** and **Close Button** have matching visible insets from the top and their respective side edges. Selecting a region that covers the map pin uses the pin's calculated index. Selecting another region pre-fills its name in the **Wolo Code Input** and positions the cursor for index entry. Calculated and previous regional references retain the outlined monospace index badge.
+
+The **Code Reference Hint** below the tabs explains that different references can give the same location different Wolo Codes.
 
 
 The Address Panel omits the Code reference selector and Propose a city button.
