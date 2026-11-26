@@ -10,6 +10,8 @@ Direct Wolo Code, coordinate and route links skip the first-run Info notice and 
 
 Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
 
+**Input City Status** appears below **Input City Hint** when the three words need a city or region. The city feedback and the instruction to choose a reference or enter the full code have their own lines and wrap on narrow screens. The **Wolo Code Proceed Button** dims and blocks taps and Enter until the code or reference changes. Holding it can still open the **Decode Preview Label** when a detected city center is available. Static text hides the caret while editable fields such as **Wolo Code Input** retain it.
+
 ## View and map-source controls
 
 In Wolo Code Input View, Saved sits next to Info on the left and the folded-map button sits next to Scan on the right. In Map View, the left button shows the Wolo Code mark and the map switcher on the right shows the next map source. The Google street map icon uses the primary accent (#69B7CF).

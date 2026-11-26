@@ -33,6 +33,8 @@
 
 Bottom notifications stay above modal dialogs and their dimmed overlay so modal action feedback remains visible.
 
+In **Wolo Code Input View**, **Input City Status** prompts for a city, a region, or the full Wolo Code when a three-word code needs a reference. The **Wolo Code Proceed Button** dims and ignores taps and Enter until the code or reference changes. Holding it still opens a preview when a detected city center is available. Editable fields retain the caret while static text hides it.
+
 ### 1. Primary Map Experience
 
 The map info window scrolls when its content exceeds the available width or height, keeping the Wolo Code and location actions accessible on macOS Safari and in small map views.
