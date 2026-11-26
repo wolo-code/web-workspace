@@ -33,7 +33,7 @@
 
 Bottom notifications stay above modal dialogs and their dimmed overlay so modal action feedback remains visible.
 
-In **Wolo Code Input View**, **Input City Status** prompts for a city, a region, or the full Wolo Code when a three-word code needs a reference. The **Wolo Code Proceed Button** dims and ignores taps and Enter until the code or reference changes. Holding it can decode from the GPS city center or an unambiguous match for the IP city and country. The **Location Wolo Label View** shows an equivalent regional Wolo Code that users can save and share. Editable fields retain the caret while static text hides it.
+In **Wolo Code Input View**, **Input City Status** prompts for a city, a region, or the full Wolo Code when a three-word code needs a reference. The **Wolo Code Proceed Button** dims and ignores taps and Enter until the code or reference changes. Holding it can decode from the GPS city center or an unambiguous match for the IP city and country. The **Location Wolo Label View** shows the detected city and the entered words. The address and external map actions open the decoded location. Saved Wolo Codes, links, and labels require a published reference. Editable fields retain the caret while static text hides it.
 
 ### 1. Primary Map Experience
 
