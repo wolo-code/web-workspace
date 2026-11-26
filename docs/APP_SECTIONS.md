@@ -10,7 +10,7 @@ Direct Wolo Code, coordinate and route links skip the first-run Info notice and 
 
 Press Enter in the Wolo Code field to run Go. Shift+Enter inserts a line break.
 
-**Input City Status** appears below **Input City Hint** when the three words need a city or region. The city feedback and the instruction to choose a reference or enter the full code have their own lines and wrap on narrow screens. The **Wolo Code Proceed Button** dims and blocks taps and Enter until the code or reference changes. Holding it can still open the **Decode Preview Label** when a detected city center is available. Static text hides the caret while editable fields such as **Wolo Code Input** retain it.
+**Input City Status** appears below **Input City Hint** when the three words need a city or region. The city feedback and the instruction to choose a reference or enter the full code have their own lines and wrap on narrow screens. The **Wolo Code Proceed Button** dims and blocks taps and Enter until the code or reference changes. Holding it can still open the **Decode Preview Label** using the GPS city center or an unambiguous match for the IP city and country. Static text hides the caret while editable fields such as **Wolo Code Input** retain it.
 
 ## View and map-source controls
 
